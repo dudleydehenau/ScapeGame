@@ -6,7 +6,7 @@
 
 # Backend
 
-**[Technologies choisies]**
+**[Technologies choisies avec justification]**
 
 1. Justification du choix 
 
@@ -18,7 +18,14 @@ Exemples de ce qu'il ne faut pas faire :
 - "parce que nous avions envie d'apprendre cette technologique "
 - "parce que c'est une technologie très utilisée sur Internet ]
 
+# Backend : base de données
+
+**[Technologies choisies avec justification]**
+
 # Frontend
 
-**[Technologies choisies]**
+**[Technologies choisies avec justification]**
+
+
+#Autres choix
 
