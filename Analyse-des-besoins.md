@@ -40,7 +40,7 @@ _[prises de notes importantes, à mettre sur le wiki, même si brouillonnes, sou
 
 1. Contexte
 
-2. Description  du besoin 
+2. Description du besoin 
 
 _[claire et complète + comment il se débrouille actuellement]_
 
@@ -49,6 +49,7 @@ _[claire et complète + comment il se débrouille actuellement]_
 _[bien expliquer l'objectif du projet, mieux avec des maquettes dès que possible pour mieux visualiser l'objectif, que ce soit des photos de dessins, faites avec un outils, etc...]_
 
 4. Objectif / valeur ajoutée du projet pour le client 
+_En quoi est-ce que développer votre projet a de la valeur et répond spécifiquement aux besoins du client ?_
 
 5. Contraintes 
 
@@ -62,16 +63,7 @@ _[avec comparaisons d'autres applications similaires existantes + mise en valeur
 
 _[S'il y en a, quid du suivi, de la maintenance, du coût ?]_
 
+8. Présentation des principes de conception UI et du Design
 
-# Conception de l'UI
-
-1. Présentation des principes de conception UI/UX 
-
-[Explication de l'ergonomie de votre interface utilisateur, en référence aux principes vus au cours théorique]
-
-2. Design
- 
-[Contraintes/choix du client, maquettes du site, polices/palettes choisies, ...] 
-
-# [Backlog](https://github.com/EphecLLN/Dev-Web-2023/wiki/Backlog)
+_[Explication de l'ergonomie de votre interface utilisateur, en référence aux principes vus au cours théorique, Contraintes/choix du client, maquettes du site, polices/palettes choisies, ...]_ 
 
