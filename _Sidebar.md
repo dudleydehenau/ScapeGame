@@ -13,12 +13,8 @@
    - [Backlogs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Backlog)
 
 2c. [Analyse et choix technologiques](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
-   - [Choix technologiques Backend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques#Backend)
-   - [Choix technologiques Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques#Frontend)
 
 3. [Architecture](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture)
-   - [Architecture Backend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture#Backend)
-   - [Architecture Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture#Frontend)
 
 4. [Git: Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/git)
 
