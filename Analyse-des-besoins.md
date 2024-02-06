@@ -3,22 +3,20 @@
 # Résumé coaching 2a
 
 ```diff
-+ * Dans le   wiki, le contexte du projet est présenté : présentation du client, son   domaine d'activité, son métier,…
-+ * Dans le   wiki, le besoin du client est bien décrit
-* L'objectif   / la valeur ajoutée du projet pour le client est correctement identifiée dans   le wiki. Il est expliqué également comment il se débrouille actuellement.
-* Les alternatives existantes sont présentées   et comparée. L'intérêt de ce projet est mis en avant.
-* Les   contraintes éventuelles sont listées dans le wiki
++ Dans le   wiki, le contexte du projet est présenté : présentation du client, son   domaine d'activité, son métier,…
++ Dans le   wiki, le besoin du client est bien décrit
++ L'objectif   / la valeur ajoutée du projet pour le client est correctement identifiée dans   le wiki. Il est expliqué également comment il se débrouille actuellement.
++ Les alternatives existantes sont présentées   et comparée. L'intérêt de ce projet est mis en avant.
++ Les   contraintes éventuelles sont listées dans le wiki
 
-* Des   contacts réguliers ont été pris avec le client
-* Les   contacts avec le client sont décrits dans le wiki
-* Le   client a testé le site et donné son feedback, qui a été pris en comtpe
++ Des   contacts réguliers ont été pris avec le client
++ Les   contacts avec le client sont décrits dans le wiki
++ Le   client a testé le site et donné son feedback, qui a été pris en comtpe
 ```
-
 
 # Description du Client
 
  
-
 1. Présentation du client 
 
 [notamment son domaine d'activité, son entreprise, etc... ]
