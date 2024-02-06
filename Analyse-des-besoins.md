@@ -1,4 +1,4 @@
-# Résumé coaching 2
+# Résumé coaching 2a
 
 * Dans le   wiki, le contexte du projet est présenté : présentation du client, son   domaine d'activité, son métier,…
 * Dans le   wiki, le besoin du client est bien décrit
