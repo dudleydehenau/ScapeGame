@@ -6,8 +6,6 @@
    - [Description du client](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins#Description-du-client)
    - [Contacts avec le client](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins#Contacts-avec-le-client)
    - [Description du projet](https://github.com/EphecLLN/Dev-Web-2202423/wiki/Analyse-des-besoins#Description-du-projet)
-   - [Contraintes](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins#contraintes)
-   - [Conception UI](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins#conception-de-lui)
 
 2b. [Epic, US, Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog)
    - [Définition utilisateurs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#utilisateurs)
