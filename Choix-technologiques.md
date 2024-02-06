@@ -6,7 +6,7 @@
 
 # 1. Backend
 
-**[Technologie choisie]**
+**[Technologies choisies]**
 
 1. Justification du choix 
 
@@ -20,5 +20,5 @@ Exemples de ce qu'il ne faut pas faire :
 
 # 2. Frontend
 
-**[Technologie choisie]**
+**[Technologies choisies]**
 
