@@ -4,7 +4,7 @@
 + Les spécificités de la technologie choisie sont mises en avant : avantages / inconvénients et comparaison avec min.  deux technologies concurrentes.  
 ```
 
-# 1. Backend
+# Backend
 
 **[Technologies choisies]**
 
@@ -18,7 +18,7 @@ Exemples de ce qu'il ne faut pas faire :
 - "parce que nous avions envie d'apprendre cette technologique "
 - "parce que c'est une technologie très utilisée sur Internet ]
 
-# 2. Frontend
+# Frontend
 
 **[Technologies choisies]**
 
