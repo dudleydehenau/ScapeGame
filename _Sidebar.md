@@ -1,19 +1,19 @@
 # Table des matières
 
-1a. [Sujet et Groupe](https://github.com/EphecLLN/Dev-Web-2024/wiki/Home)
+1. [Sujet et Groupe](https://github.com/EphecLLN/Dev-Web-2024/wiki/Home)
 
-2a. [Analyse des besoins](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins)
+2. [2.a Analyse des besoins](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins)
    - [Description du client](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins#Description-du-client)
    - [Description du projet](https://github.com/EphecLLN/Dev-Web-2202423/wiki/Analyse-des-besoins#Description-du-projet)
 
-2b. [Epic, US, Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog)
+2. [2.b Epic, US, Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog)
    - [Définition utilisateurs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#utilisateurs)
    - [Epics](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#Epics)
    - [Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Backlog)
 
-2c. [Choix technologiques et justifications](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
+2. [2.c Choix technologiques et justifications](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
 
-3a. [Architecture et démos Backend+Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture)
+3. [Architecture et démos Backend+Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture)
 
 4a. [Git](https://github.com/EphecLLN/Dev-Web-2024/wiki/git)
 
