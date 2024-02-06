@@ -9,7 +9,7 @@
 2b. [Epic, US, Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog)
    - [Définition utilisateurs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#utilisateurs)
    - [Epics](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#Epics)
-   - [Backlogs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Backlog)
+   - [Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Backlog)
 
 2c. [Choix technologiques et justifications](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
 
