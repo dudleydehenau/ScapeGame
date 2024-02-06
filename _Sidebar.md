@@ -15,7 +15,7 @@
 
 3. [Architecture et démos Backend+Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture)
 
-4. [Git: Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/git)
+4. [Git](https://github.com/EphecLLN/Dev-Web-2024/wiki/git)
 
 5a. [API](https://github.com/EphecLLN/Dev-Web-2024/wiki/API)
 
