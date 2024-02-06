@@ -23,13 +23,16 @@
    - [Architecture Frontend](https://github.com/EphecLLN/Dev-Web-2023/wiki/Architecture#Frontend)
 
 4. [Analyse technique: Frontend](https://github.com/EphecLLN/Dev-Web-2023/wiki/Frontend)
+
 5. [Analyse technique: API](https://github.com/EphecLLN/Dev-Web-2023/wiki/API)
+
 6. [Collaboration, implémentation, outils](https://github.com/EphecLLN/Dev-Web-2023/wiki/Collaboration-Implémentation-Outils)
    - [Organisation du groupe](https://github.com/EphecLLN/Dev-Web-2023/wiki/Collaboration-Implémentation-Outils#Organisation-du-groupe)
    - [Ambiance dans le groupe](https://github.com/EphecLLN/Dev-Web-2023/wiki/Collaboration-Implémentation-Outils#Ambiance-dans-le-groupe)
    - [Outils utilisés](https://github.com/EphecLLN/Dev-Web-2023/wiki/Collaboration-Implémentation-Outils#Outils-utilisés)
    - [Qualité du code](https://github.com/EphecLLN/Dev-Web-2023/wiki/Collaboration-Implémentation-Outils#Qualité-du-code)
 7. [US personnelles](https://github.com/EphecLLN/Dev-Web-2023/wiki/US-personelles)
+
 8. [Testing](https://github.com/EphecLLN/Dev-Web-2023/wiki/Testing)
    - [Présentation globale des tests](https://github.com/EphecLLN/Dev-Web-2023/wiki/Testing#Présentation-globale-des-tests)
    - [Tests individuels](https://github.com/EphecLLN/Dev-Web-2023/wiki/Testing#Tests-individuels)
@@ -40,6 +43,7 @@
    - [Validation de la sécurité](https://github.com/EphecLLN/Dev-Web-2023/wiki/Déploiement-et-Sécurisation#Validation-de-la-sécurité)
    - [Cadre légal](https://github.com/EphecLLN/Dev-Web-2023/wiki/Déploiement-et-Sécurisation#Cadre-légal)
    - [Bilan de la sécurisation](https://github.com/EphecLLN/Dev-Web-2023/wiki/Déploiement-et-Sécurisation#Bilan-de-la-sécurisation)
+
 10. [Bilan du projet](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bilan-du-projet)
     - [Bilan de la web app réalisée](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bilan-du-projet#Bilan-de-la-web-app-réalisée)
     - [Points forts du projet](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bilan-du-projet#Points-forts-du-projet)
@@ -47,4 +51,5 @@
     - [Temps consacré au projet](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bilan-du-projet#Temps-consacré-au-projet)
     - [Bilan global de la réalisation](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bilan-du-projet#Bilan-global-de-la-réalisation)
     - [Bilans individuels](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bilan-du-projet#Bilans-individuels)
+
 11. [Bibliographie](https://github.com/EphecLLN/Dev-Web-2023/wiki/Bibliographie)
