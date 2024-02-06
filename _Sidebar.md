@@ -22,8 +22,6 @@
 5b. [US persos détaillées](https://github.com/EphecLLN/Dev-Web-2024/wiki/Us-personelles)
 
 6a. [Déploiement](https://github.com/EphecLLN/Dev-Web-2024/wiki/deploiement)
-   - [Choix du serveur](https://github.com/EphecLLN/Dev-Web-2024/wiki/deploiement#Choix-du-serveur)
-   - [Technique de déploiement](https://github.com/EphecLLN/Dev-Web-2024/wiki/deploiement#Technique-de-déploiement)
 
 6a. [Collaboration, implémentation, outils](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils)
    - [Organisation du groupe](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils#Organisation-du-groupe)
