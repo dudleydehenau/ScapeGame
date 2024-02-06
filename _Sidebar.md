@@ -12,9 +12,9 @@
    - [Epics](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#Epics)
    - [Backlogs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Backlog)
 
-2c. [Analyse et choix technologiques](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
+2c. [Choix technologiques et justifications](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
 
-3. [Architecture](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture)
+3. [Architecture et démos Backend+Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/Architecture)
 
 4. [Git: Frontend](https://github.com/EphecLLN/Dev-Web-2024/wiki/git)
 
