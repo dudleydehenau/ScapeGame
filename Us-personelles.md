@@ -6,7 +6,7 @@
 
 Pour rappel, les **US individuelles** sont :
 * spécifiques à votre projet (pas générique comme une page de login ou de changement de mot de passe par exemple)
-* "intéressantes", c'est-à-dire qui fait intervenir des compétences pertinentes
+* "intéressantes", c'est-à-dire qui fait intervenir des compétences pertinentes, avec backend et frontend
 * pas trop courtes. (Même si en tant qu'US ce ne doit pas être trop gros.)
 * décrites et implémentées par un seul étudiant, pour permettre de valider ses compétences
 * relativement prioritaires, pour qu'elle soit réalisées tôt dans le projet
