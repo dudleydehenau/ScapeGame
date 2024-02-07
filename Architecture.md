@@ -8,7 +8,7 @@
 + Le schéma DB, ainsi que les autres schémas utiles, seront placés ici, datés. (Et mis à jour.)
 ```
 
-1. # Backend
+# 1. Backend
 
 ## 1.1 Organisation du code
 
