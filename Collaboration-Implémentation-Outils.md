@@ -40,3 +40,35 @@
 + Le code est lisible et facilement compréhensible par un développeur non impliqué dans le projet
 + Le groupe a mis en place des reviews de code systématiques et peut le démontrer
 ```
+
+# 1. Organisation du groupe
+
+_[Présentation de la manière dont votre groupe s'organise : réunions, communications, planification...]_
+
+# 2. Ambiance dans le groupe
+
+_[Est-ce que tout se passe bien ? Quels problèmes avez-vous rencontrés ? Comment le avez-vous résolus ? Est-ce que tout le monde a l'impression que le groupe est suffisamment organisé ? Que les autres travaillent suffisamment ? Sinon, quelles solutions aimeriez-vous mettre en place ?]_
+
+# 3. Outils utilisés
+
+
+## 3.1 Gestionnaire de tâches
+
+_[Explication de comment vous avez organisé votre gestionnaire de tâches.  Si vous changez en cours de route, expliquez quoi et pourquoi]_
+
+## 3.2 Gestionnaire de temps
+
+## 3.3 Outils de communication et de partage
+
+## 3.4 Outils de développement
+
+_[IDE, extensions, test, etc...]_
+
+## 3.5 Autres outils
+
+_[Quels autres outils ont été utilisés?  Pourquoi?]_
+
+
+# 4. Qualité du code
+
+_[Explication des conventions de codage, description des outils de "linting" et de tout ce qui a été mis en place pour s'assurer de la qualité du code produit.]_
