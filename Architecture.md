@@ -20,7 +20,7 @@
 [Explication textuelle du diagramme de classes]
 
 
-# 2. Schémas et diagrammes
+# 2. Schémas, diagrammes et infos
 
 ## 2.1 Diagrammes liés à la base de données
 
@@ -29,7 +29,7 @@
 
 ## 2.2 Résumé du fonctionnement général de l'application (idéalement avec un schéma)
 
-## 2.3 Autres diagrammes de fonctionnement et d'architecture
+## 2.3 Autres diagrammes de fonctionnement et d'architecture (ou autres informations utiles)
 
 # 3. Frontend
 
