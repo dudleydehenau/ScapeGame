@@ -1,6 +1,6 @@
 # Résumé coaching 5.b
 ```diff
-+ Chaque étudiant a bien décrit entièrement et soigneusement sa Use story personnelle, comme attendu. 
++ Chaque étudiant a bien décrit entièrement et soigneusement sa User story personnelle, comme attendu. 
 + Chaque étudiant indique ici quelle est sa US personnelle et indique le lien pour pouvoir accéder à sa description.
 ```
 
