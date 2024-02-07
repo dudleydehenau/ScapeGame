@@ -1,4 +1,4 @@
-# Résumé coaching 6.a
+# Résumé coaching 7
 ```diff
 + Chaque membre du groupe a déposé sa vidéo personnelle dans le Teams de son groupe.
 ```
