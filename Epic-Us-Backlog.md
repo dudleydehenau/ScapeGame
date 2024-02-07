@@ -27,21 +27,14 @@ _Mettre ici le lien vers le logiciel que vous utiliser pour définir votre backl
 _Au fur et à mesure de l'avancement di projet, vous complèterez les User Stories. Il est attendu un soin tout particulier pour la description des US personelles. Le nom de l'auteur de l'US est clairement indiqué dans le backlog._
 
 Pour rappel US analysée comporte :
-- un nom correct,
-- un code unique, avec la possibilité d'ordonner toutes les US depuis le début du projet
+- un nom correct (Le titre est sous forme "en tant que …, je souhaite… afin de…")
+- un code unique, il faut pouvoir les TRIER PAR ORDRE DE PRIORITE toutes les US du projet, chacune avec un code, numéro ou nom unique, permettant d'ordonner.
 - la valeur pour le client
-- une description textuelle claire et complète, accompagnée de maquettes, définissant précisément la US
-- la référence aux autres US liées à faire avant ou après, pour bien comprendre le contexte
-- les critères d'acceptation clairs et complets, sous forme de scénario (voire de checklist)
-ainsi qu'avant d'implémenter : 
-- une découpe en tâches technique avec les infos nécessaires à l'implémentation
-- la complexité/durée estimée
+- une description textuelle claire et complète, accompagnée de maquettes, définissant précisément la US, notamment son début et sa fin.
+- les US sont bien découpées. Une US devrait porter sur un ajout fonctionnel utile au client. Idéalement une US devrait pouvoir être implémentée en une journée.
+- la référence aux autres US liées, à faire avant ou après, est indiquée pour bien comprendre le contexte
+- les critères d'acceptation clairs et complets, sous forme de scénario (voire de checklist), permettant de définir précisément si une US est bien implémentée, complètement (attention aux cas d'erreurs également)
 
-Plus de précisions :
-- Il faut pouvoir les TRIER PAR ORDRE DE PRIORITE, chacune avec un code, numéro ou nom unique permettant d'ordonner._
-- Le titre est sous forme "en tant que …, je souhaite… afin de…"
-- L'apparence de l'interface utilisateur de la US est précisée, avec un lien si la maquette se trouve ailleurs : emplacement/navigation, layout, maquettes, …
-- Les US sont bien découpées. Une US devrait porter sur un ajout fonctionnel utile au client. Idéalement une US devrait pouvoir être implémentée en une journée.
-
-- Les dépendances techniques de la US sont précisées : prérequis, endpoints API, tables de la DB, librairies utilisées, …
-- Les US sont estimées en terme de durée et complexité, pour comparer par la suite avec l'effort réellement apporté
+Fournir également avant d'implémenter : 
+- une découpe en tâches technique avec les infos nécessaires à l'implémentation, notamment les dépendances techniques de la US : prérequis, endpoints API, tables de la DB, librairies utilisées, 
+- la complexité/durée estimée, pour aider à planifier le développement et pour comparer par la suite avec l'effort réellement apporté
