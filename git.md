@@ -4,4 +4,4 @@
 + Le groupe peut montrer que tout est en place et que tous les membres du groupes utilisent déjà git pour le projet
 
 ```
-# Explication et justification du git workflow utilisé
+## 1. Explication et justification du git workflow utilisé
