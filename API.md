@@ -13,9 +13,9 @@
 + Le groupe utilise un outil adéquat dédié pour tester son API lors du développement
 
 ```
-# 1. Choix de conception pour l'API
+## 1. Choix de conception pour l'API
 
-# 2. Documentation de l'API
+## 2. Documentation de l'API
 _Lien vers la doc, ou directement la documentation_
 
-# 3. Outils utilisés pour développer et tester l'API 
+## 3. Outils utilisés pour développer et tester l'API 
