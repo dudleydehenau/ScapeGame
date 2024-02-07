@@ -3,11 +3,11 @@
 + Les choix de conception de l'API sont expliqués sur le Wiki : Ressources exposées, choix de nommage, technologie utilisée… Les noms et conventions utilisés sont cohérents.
 + La documentation de l'API est accessible depuis le Wiki.  Elle est claire et bien organisée. 
 "Pour chaque ressource, une section détaille : 
-- la description de la ressource
-- les endpoints associés et les méthodes pour y accéder
-- les éventuels paramètres disponibles
-- un exemple de requête
-- un exemple de réponse"
+* la description de la ressource
+* les endpoints associés et les méthodes pour y accéder
+* les éventuels paramètres disponibles
+* un exemple de requête
+* un exemple de réponse"
 + L'API respecte globalement les principes REST
 + Le groupe peut présenter un exemple fonctionnel de endpoint de l'API (par ex. avec curl).  Tous les étudiants peuvent en expliquer le fonctionnement.  
 + Le groupe utilise un outil adéquat dédié pour tester son API lors du développement
