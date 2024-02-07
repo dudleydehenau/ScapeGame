@@ -1,6 +1,9 @@
 # Résumé coaching 7
 ```diff
 + Chaque membre du groupe a déposé sa vidéo personnelle dans le Teams de son groupe.
+
++ L'étudiant a réalisé seul l'implémentation de cette User Story.
++ L'étudiant a soigneusement utilisé le gestionnaire de code, de tâche et de temps lors de l'implémentation de sa US personnelle.
 ```
 
 Pour rappel, cette vidéo de moins de 10 minutes à réaliser seul peut être très simple (enregistrée avec Teams par exemple) et présente la US personnelle implémentée par l'étudiant.
