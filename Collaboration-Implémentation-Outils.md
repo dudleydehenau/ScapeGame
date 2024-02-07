@@ -21,7 +21,7 @@
 + Chacun s'assigne lui-même ses tâches et les places dans les bonnes colonnes.
 + Tout travail réalisé par un étudiant se trouve bien en tant que tâche dans le gestionnaire.
 + On peut facilement faire la différence entre  les US et les tâches techniques.
-+ 
+
 + TEMPS
 + Pour ce projet il est possible de savoir combien de temps a été passé sur quelles parties du projet (backend, DB, API, frontend, test, analyse, + + + réunion, formation, rédaction, ...)
 + Il est possible de savoir combien de temps chaque membre a travaillé sur le projet.
