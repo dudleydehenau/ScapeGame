@@ -19,9 +19,6 @@
 [Diagramme de classes] 
 [Explication textuelle du diagramme de classes]
 
-## 1.3 Fonctionnement
-
-[Explication du fonctionnement du backend, accompagné d'un schéma.  Par exemple : Explication du "voyage" d'une requête entre la réception de la requête sur une route donnée et l'envoi d'une réponse]
 
 # 2. Schémas et diagrammes
 
@@ -30,7 +27,9 @@
 [Schémas EA / Relationnel de la DB]
 [Texte expliquant les diagrammes et justifiant les choix de conception]
 
-## 2.2 Autres diagrammes de fonctionnement et d'architecture
+## 2.2 Résumé du fonctionnement général de l'application (idéalement avec un schéma)
+
+## 2.3 Autres diagrammes de fonctionnement et d'architecture
 
 # 3. Frontend
 
