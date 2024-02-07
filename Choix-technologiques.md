@@ -22,9 +22,13 @@ Exemples de ce qu'il ne faut pas faire :
 
 **[Technologies choisies avec justification]**
 
+## 2.1 Justification du choix 
+
 # 3. Frontend
 
 **[Technologies choisies avec justification]**
+
+## 3.1 Justification du choix 
 
 
 # 4. Autres choix
