@@ -7,10 +7,7 @@
    - [Description du client](https://github.com/EphecLLN/Dev-Web-2024/wiki/Analyse-des-besoins#Description-du-client)
    - [Description du projet](https://github.com/EphecLLN/Dev-Web-2202423/wiki/Analyse-des-besoins#Description-du-projet)
 
-   [2.b Epic, US, Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog)
-   - [Définition utilisateurs](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#utilisateurs)
-   - [Epics](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog#Epics)
-   - [Backlog](https://github.com/EphecLLN/Dev-Web-2024/wiki/Backlog)
+   [2.b Backlog (Utilisateurs, Epics, US)](https://github.com/EphecLLN/Dev-Web-2024/wiki/Epic-Us-Backlog)
 
    [2.c Choix technologiques et justifications](https://github.com/EphecLLN/Dev-Web-2024/wiki/Choix-technologiques)
 
