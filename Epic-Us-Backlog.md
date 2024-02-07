@@ -27,8 +27,8 @@ _Mettre ici le lien vers le logiciel que vous utiliser pour définir votre backl
 _Au fur et à mesure de l'avancement di projet, vous complèterez les User Stories. Il est attendu un soin tout particulier pour la description des US personelles. Le nom de l'auteur de l'US est clairement indiqué dans le backlog._
 
 Pour rappel sur les US :
-- Elles doivent être nommées comme demandées et il faut pouvoir les TRIER PAR ORDRE DE PRIORITE, chacune avec un code/numéro unique._
-- Le titre est sous forme "en tant que …, je souhaite… afin de…
+- Elles doivent être nommées comme demandées et il faut pouvoir les TRIER PAR ORDRE DE PRIORITE, chacune avec un code, numéro ou nom unique permettant d'ordonner._
+- Le titre est sous forme "en tant que …, je souhaite… afin de…"
 - Les US sont estimées en terme de valeur pour le client.
 - Une US analysée comporte : un nom correct, une description textuelle claire et complète accompagnée de maquettes, les critères d'acceptation ( ainsi - qu'une découpe en tâche technique avant de l'implémenter).
 - L'apparence de l'interface utilisateur de la US est précisée, avec un lien si la maquette se trouve ailleurs : emplacement/navigation, layout, maquettes, …
