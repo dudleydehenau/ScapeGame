@@ -4,11 +4,11 @@
 + Les spécificités de la technologie choisie sont mises en avant : avantages / inconvénients et comparaison avec min.  deux technologies concurrentes.  
 ```
 
-# Backend
+# 1. Backend
 
 **[Technologies choisies avec justification]**
 
-1. Justification du choix 
+## 1.1 Justification du choix 
 
 [Cette justification (et toutes celles qui suivent) doit être argumentée avec indication des sources utilisées (par ex. lien vers la biblio spécifiant le n° de la ressource). Elle doit mentionner les technologies concurrentes et indiquer en quoi celle choisie se démarque des autres.  Le choix effectué ne doit pas être trivial.  
 
@@ -18,14 +18,14 @@ Exemples de ce qu'il ne faut pas faire :
 - "parce que nous avions envie d'apprendre cette technologique "
 - "parce que c'est une technologie très utilisée sur Internet ]
 
-# Backend : base de données
+# 2. Backend : base de données
 
 **[Technologies choisies avec justification]**
 
-# Frontend
+# 3. Frontend
 
 **[Technologies choisies avec justification]**
 
 
-#Autres choix
+# 4. Autres choix
 
