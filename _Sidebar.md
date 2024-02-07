@@ -24,10 +24,6 @@
     [6.a Déploiement](https://github.com/EphecLLN/Dev-Web-2024/wiki/deploiement)
 
     [6.b Collaboration, implémentation, outils](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils)
-   - [Organisation du groupe](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils#Organisation-du-groupe)
-   - [Ambiance dans le groupe](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils#Ambiance-dans-le-groupe)
-   - [Outils utilisés](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils#Outils-utilisés)
-   - [Qualité du code](https://github.com/EphecLLN/Dev-Web-2024/wiki/Collaboration-Implémentation-Outils#Qualité-du-code)
 
 7. [Présentations et Vidéos US perso](https://github.com/EphecLLN/Dev-Web-2024/wiki/US-personelles-videos)
 
