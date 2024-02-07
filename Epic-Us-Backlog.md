@@ -26,7 +26,7 @@ _Chaque étudiant décrit ici un EPIC, avec les maquettes associées, pour bien 
 _Mettre ici le lien vers le logiciel que vous utiliser pour définir votre backlog, ou décrire directement les US ici i c'est votre choix._
 _Au fur et à mesure de l'avancement di projet, vous complèterez les User Stories. Il est attendu un soin tout particulier pour la description des US personelles. Le nom de l'auteur de l'US est clairement indiqué dans le backlog._
 
-Pour rappel US analysée comporte :
+Pour rappel, une US analysée comporte :
 - un nom correct (Le titre est sous forme "en tant que …, je souhaite… afin de…")
 - un code unique, il faut pouvoir les TRIER PAR ORDRE DE PRIORITE toutes les US du projet, chacune avec un code, numéro ou nom unique, permettant d'ordonner.
 - la valeur pour le client
