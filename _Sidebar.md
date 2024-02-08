@@ -28,9 +28,6 @@
 7. [Présentations et Vidéos US perso](https://github.com/EphecLLN/Dev-Web-2024/wiki/US-personelles-videos)
 
 8. [Testing](https://github.com/EphecLLN/Dev-Web-2024/wiki/Testing)
-   - [Présentation globale des tests](https://github.com/EphecLLN/Dev-Web-2024/wiki/Testing#Présentation-globale-des-tests)
-   - [Rapport de test et interprétation](https://github.com/EphecLLN/Dev-Web-2024/wiki/Testing#rapport-et-interpretation-tests)
-   - [Tests individuels](https://github.com/EphecLLN/Dev-Web-2024/wiki/Testing#Tests-individuels)
 
 9. [Mesures de sécurité](https://github.com/EphecLLN/Dev-Web-2024/wiki/Securisation)
    - [Analyse de la sécurité](https://github.com/EphecLLN/Dev-Web-2024/wiki/Securisation#Securisation)
