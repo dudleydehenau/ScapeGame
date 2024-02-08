@@ -4,7 +4,7 @@
 + Les EPIC(regroupement logique de fonctionnalités) sont définies et décrites pour le projet, un EPIC par étudiant. 
 + Les User stories des EPIC sont listées (pas encore le détail). 
 + Les EPICS s'accompagnent de maquettes pour comprendre l'application visée.
-+ Le groupe a défini où il définira son Backlog, soit la liste des user stories. Si c'est en dehors du wiki, il met un lien.
++ Le groupe a défini où il rédigera son Backlog, soit la liste des user stories. Si c'est dans un outil en dehors du wiki, il donne le lien.
 ```
 
 # 1. Liste des utilisateurs
