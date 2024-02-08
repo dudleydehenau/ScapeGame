@@ -51,7 +51,7 @@ INDIVIDUEL
 
 
 
-# 4. Tests individuels 
+# 4. Tests individuels (a priori pour US personnelles)
 
 ## 4.1 Etudiant 1
 
