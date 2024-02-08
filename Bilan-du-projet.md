@@ -1,4 +1,5 @@
-# 0. Lien de la vidéo de présentation du projet sur Teams
+# 0. Lien de la vidéo de présentation du projet 
+_[La vidéo doit être déposée dans votre canal d'équipe Teams]_
 
 # 1. Bilan de la web app réalisée
 
