@@ -1,6 +1,6 @@
 # Résumé coaching 9
 ```diff
-+ ANALYSE DE SECURITE
+ANALYSE DE SECURITE
 + Le groupe a effectué et documenté sur le wiki une analyse de sécurité correcte, en identifiant les biens à protéger et en estimant les menaces et les risques associés.
 + Le groupe a identifié des contre-mesures adéquates pour l'ensemble des menaces identifiées.  
 + Le groupe connait et documente les limites de son travail de sécurisation (risques résiduels, …)
