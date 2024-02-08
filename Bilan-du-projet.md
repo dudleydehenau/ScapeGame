@@ -54,4 +54,4 @@ _[+ analyse réflexive : Qu'avez-vous pensé de l'investissement en temps ? Comm
 
 # Bilans individuels
 
-_[Ne pas oublier de remettre le formulaire individuel qui fera office de rapport individuel].]_
+_[Ne pas oublier de remettre le formulaire individuel qui fera office de rapport individuel.]_
