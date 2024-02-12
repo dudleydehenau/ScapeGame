@@ -7,7 +7,7 @@ ORGANISATION DU GROUPE [A COMPLETER CI-DESSOUS]
 
 WIKI ET COACHING [A VERIFIER]
 + Le wiki est correctement complété au fur et à mesure
-+ Les coachings sont bien préparé à l'avance pour rapidement présenter les points et poser des questions
++ Les coachings sont bien préparés à l'avance, pour rapidement présenter les points prioritaires du jour et poser les bonnes questions
 + Le fichier de suivi est bien complété par tous les membres du groupe avant chaque coaching
 + La bibliographie est bien présentée, présente des liens intéressants et montre que les étudiants se sont bien documentés.  Les ressources sont + référencées dans le texte. 
 + Le groupe n'attend pas : s'il a des questions techniques, il les pose d'abord directement sur le chat
