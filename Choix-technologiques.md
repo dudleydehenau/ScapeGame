@@ -1,7 +1,7 @@
 # Résumé coaching 2c 
 ```diff
-+ Le langage ou le framework choisi pour le backend, puis pour le frontend est décrit et il s'agit de technologies "intéressantes" dans le cadre du projet.
-+ Les spécificités de la technologie choisie sont mises en avant : avantages / inconvénients et comparaison avec min.  deux technologies concurrentes.  
++ Le langage ou le framework choisi pour le backend, puis pour le frontend est décrit. Il s'agit de technologies "intéressantes" dans le cadre du projet.
++ Les spécificités de la technologie choisie sont mises en avant : avantages / inconvénients et comparaison avec minimum deux technologies concurrentes.  
 ```
 
 # 1. Backend
