@@ -12,7 +12,7 @@ SECURISATION
 	
 VALIDATION DE LA SECURITE
 + Les étudiants ont utilisé des outils extérieurs pour valider la sécurisation de leur site, et présentent les résultats sur le wiki
-+ Les étudiants ont interprété et pris en compte les retours donnés par les outils extérieurs et corrigé les failles de sécurité éventuellement identifiées
++ Les étudiants ont compris, interprété et pris en compte les retours donnés par les outils extérieurs et corrigé les failles de sécurité éventuellement identifiées
 	
 ASPECTS LEGAUX	
 + Le wiki présente les contraintes légales auquel est soumis le site web (notamment RGPD)
