@@ -1,11 +1,11 @@
 # Résumé coaching 3 
 ```diff
-+ Le groupe est capable de montrer en démo que le backend et le frontend choisis fonctionnent (du moins les bases).
++ Le groupe montre en démo que backend et frontend choisis sont installés et fonctionnent (au moins les bases).
 + Idéalement le groupe peut également faire le lien pour accéder à la base de données choisie.
 
 + Le groupe explique dans le wiki quelle est l'architecture et comment le projet est mis en place.
-+ Le groupe doit maintenir à jour cette partie au fur et à mesure de l'avancement du projet et des choix effectués, en prévenant lecoach.
-+ Le schéma DB, ainsi que les autres schémas utiles, seront placés ici, datés. (Et mis à jour.)
++ Le groupe doit maintenir à jour cette partie au fur et à mesure de l'avancement du projet et des choix effectués, en prévenant le coach.
++ Le schéma DB, ainsi que les autres schémas utiles, seront placés ici (datés!) Et mis à jour au fur et à mesure des changements.
 ```
 
 # 1. Backend
