@@ -18,10 +18,10 @@ GIT [A VERIFIER]
 
 GESTIONNAIRE DE TACHES [A COMPLETER CI-DESSOUS ET VERIFIER]
 + Les colonnes du gestionnaire de tâches sont appropriées (Backlog, todo, doing, to review, Done...)
-+ Les tâches dans le gestionnaire sont approprées et dans le bon état
-+ Chacun s'assigne lui-même ses tâches et les places dans les bonnes colonnes.
++ Les tâches dans le gestionnaire sont appropriées et dans le bon état
++ Chacun s'assigne lui-même ses tâches et les place dans les bonnes colonnes.
 + Tout travail réalisé par un étudiant se trouve bien en tant que tâche dans le gestionnaire.
-+ On peut facilement faire la différence entre  les US et les tâches techniques.
++ On peut facilement faire la différence entre les US et les tâches techniques ou autres.
 
 TEMPS [A VERIFIER]
 + Pour ce projet il est possible de savoir combien de temps a été passé sur quelles parties du projet (backend, DB, API, frontend, test, analyse, + + + réunion, formation, rédaction, ...)
