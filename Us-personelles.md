@@ -19,9 +19,9 @@ Pour rappel, une **US analysée** comporte :
 - un **code unique**, il faut pouvoir les **TRIER PAR ORDRE DE PRIORITE** toutes les US du projet, chacune avec un code ou numéro ou nom unique permettant d'ordonner.
 - la **valeur** pour le client
 - une **description textuelle** claire et complète, accompagnée de maquettes, définissant précisément la US, notamment son début et sa fin.
-- les US sont **bien découpées**. Une US devrait porter sur un ajout fonctionnel utile au client. Idéalement une US devrait pouvoir être implémentée en une journée.
-- la **référence **aux autres US liées, à faire avant ou après, est indiquée pour bien comprendre le contexte
-- les **critères d'acceptation **clairs et complets, sous forme de scénario (voire de checklist), permettant de définir précisément si une US est bien implémentée, complètement (attention aux cas d'erreurs également)
+- les US sont **bien découpées**. Une US devrait porter sur un (et un seul) ajout fonctionnel utile au client. Idéalement une US devrait pouvoir être implémentée en une journée.
+- la **référence** aux autres US liées, à faire avant ou après, est indiquée pour bien comprendre le contexte
+- les **critères d'acceptation** clairs et complets, sous forme de scénario (voire de checklist), permettant de définir précisément si une US est bien implémentée, complètement (attention aux cas d'erreurs également)
 
 Fournir également avant d'implémenter : 
 - une découpe en **tâches techniques** avec les infos nécessaires à l'implémentation, notamment les dépendances techniques de la US : prérequis, endpoints API, tables de la DB, librairies utilisées, 
