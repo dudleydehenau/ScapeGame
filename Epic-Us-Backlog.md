@@ -19,7 +19,7 @@ _[La descriptions des différents types d'utilisateurs de l'application, par exe
 
 # 2. EPICs
 
-_Chaque étudiant décrit ici un EPIC, avec les maquettes associées, pour bien comprendre globalement l'application. La liste des fonctionnalités ("User Stories) des Epic est listée, sans le détail dans un premier temps._
+_Chaque étudiant décrit ici un EPIC, avec les maquettes associées, pour bien comprendre globalement l'application. La liste des fonctionnalités ("User Stories) des Epic est listée. (Le détail n'est pas obligatoire dans un premier temps.)_
 
 # 3. User Stories
 
