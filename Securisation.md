@@ -11,7 +11,7 @@ SECURISATION
 + Le groupe a mis en place les éléments de sécurité demandés dans le cadre du cours. Le groupe justifie et implémente correctement les mesures de sécurité au niveau du serveur (Utilisation https, version à jour / patchée, réflexion sur le hardening du serveur -par ex : pas d’autre port ouvert-, gestion des connexions et sessions, disponibilité, …), au niveau logiciel ( Librairies / Framework utilisés à jour, XSS, SQLi,gestion/stockage des mots de passe, ... ) et de la DB ( Inaccessible de l’extérieur, permissions / rôles définis adéquatement, backup, …)
 	
 VALIDATION DE LA SECURITE
-+ Les étudiants ont utilisé des outils extérieurs pour validé la sécurisation de leur site, et présentent les résultats sur le wiki
++ Les étudiants ont utilisé des outils extérieurs pour valider la sécurisation de leur site, et présentent les résultats sur le wiki
 + Les étudiants ont interprété et pris en compte les retours donnés par les outils extérieurs et corrigé les failles de sécurité éventuellement identifiées
 	
 ASPECTS LEGAUX	
