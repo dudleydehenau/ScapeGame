@@ -12,7 +12,7 @@ Nom | Pseudo Github | US personnelle décrite | US personelle implémentée
 
 ## Description du projet
 
-[Résumé du projet : Besoin, client, cible.  Version courte, 2-3 lignes]
+[Résumé du projet : Besoin, client, cible.  Version courte, 2-3 lignes, avec 1-3 maquettes principales pour illustrer.]
 
 ## Technologies choisies
 
