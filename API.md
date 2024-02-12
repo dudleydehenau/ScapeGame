@@ -2,7 +2,7 @@
 ```diff
 + Les choix de conception de l'API sont expliqués sur le Wiki : Ressources exposées, choix de nommage, technologie utilisée… Les noms et conventions utilisés sont cohérents.
 + La documentation de l'API est accessible depuis le Wiki.  Elle est claire et bien organisée. 
-"Pour chaque ressource, une section détaille : 
+"Pour chaque ressource, une section détaille au moins : 
 * la description de la ressource
 * les endpoints associés et les méthodes pour y accéder
 * les éventuels paramètres disponibles
