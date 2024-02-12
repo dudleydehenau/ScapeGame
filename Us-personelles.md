@@ -4,7 +4,7 @@
 + Chaque étudiant indique ici quelle est sa US personnelle et indique le lien pour pouvoir accéder à sa description.
 ```
 
-Pour rappel, les **US individuelles** sont :
+Pour rappel, les **US individuelles**, à valider avec un coach, sont :
 * spécifiques à votre projet (pas générique comme une page de login ou de changement de mot de passe par exemple)
 * "intéressantes", c'est-à-dire qui fait intervenir des compétences pertinentes, avec backend et frontend
 * pas trop courtes. (Même si en tant qu'US ce ne doit pas être trop gros.)
@@ -12,6 +12,7 @@ Pour rappel, les **US individuelles** sont :
 * relativement prioritaires, pour qu'elle soit réalisées tôt dans le projet
 * pour lesquelles l'analyse et le testing seront particulièrement soignés
 * pour lesquelles vous réaliserez une vidéo individuelle simple de présentation complète (max 10 min)
+(voir : https://github.com/EphecLLN/Dev-Web-2024/wiki/US-personelles-videos)
 
 Pour rappel, une **US analysée** comporte :
 - un **nom correct** (Le titre est sous forme "en tant que …, je souhaite… afin de…")
