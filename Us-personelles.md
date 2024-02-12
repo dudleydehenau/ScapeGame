@@ -23,8 +23,8 @@ Pour rappel, une **US analysée** comporte :
 - la **référence** aux autres US liées, à faire avant ou après, est indiquée pour bien comprendre le contexte
 - les **critères d'acceptation** clairs et complets, sous forme de scénario (voire de checklist), permettant de définir précisément si une US est bien implémentée, complètement (attention aux cas d'erreurs également)
 
-Fournir également avant d'implémenter : 
-- une découpe en **tâches techniques** avec les infos nécessaires à l'implémentation, notamment les dépendances techniques de la US : prérequis, endpoints API, tables de la DB, librairies utilisées, 
+Fournir également (probablement dans le gestionnaire de tâches) avant d'implémenter : 
+- une découpe en **tâches techniques** avec les infos nécessaires à l'implémentation, notamment les dépendances techniques de la US : prérequis, endpoints API, tables de la DB, librairies utilisées, ...
 - la **complexité/durée** estimée, pour aider à planifier le développement et pour comparer par la suite avec l'effort réellement apporté
 
 # 1. Liste des US personnelles par étudiant avec les liens pour y accéder
