@@ -28,8 +28,8 @@ TEMPS [A VERIFIER]
 + Il est possible de savoir combien de temps chaque membre a travaillé sur le projet.
 
 OUTILS communication, développement, partage et autres [A COMPLETER CI-DESSOUS]
-+ Le groupe présente les outils qu'il utilise pour communiquer, partager des fichiers, des éunions, etc…
-+ Le groupe présetne les outils qu'il utilise pour développer
++ Le groupe présente les outils qu'il utilise pour communiquer, partager des fichiers, assurer les réunions, etc…
++ Le groupe présente les outils qu'il utilise pour développer
 + Le groupe présente éventuellement d'autres outils utilisés et présente leur utilisation
 
 QUALITE DU CODE [A COMPLETER CI-DESSOUS]
