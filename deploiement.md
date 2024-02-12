@@ -1,7 +1,7 @@
 # Résumé coaching 6.a
 ```diff
 + Le groupe a pu mettre en ligne l'application développée dans son état actuel.
-+ Le groupe peut expliquer ce qu'il a du faire pour déployer et justifier les choix. 
++ Le groupe peut expliquer ce qu'il a dû faire pour héberger et déployer, et justifier les choix. 
 
 + Le groupe présente sur le wiki le choix qui a été posé pour héberger l'application web : fournisseur, configuration matérielle, prix, garantie, plateforme logicielle, …
 + Le groupe présente sur le wiki la configuration du serveur utilisée et la justifie. 
