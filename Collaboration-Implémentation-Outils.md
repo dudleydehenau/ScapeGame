@@ -3,7 +3,7 @@
 ORGANISATION DU GROUPE [A COMPLETER CI-DESSOUS]
 + Le groupe présente sur le wiki la manière dont le groupe s'organise : planification des échanges et rencontres, déroulement et timing des réunions et séances de travail, outils de communication utilisés, …
 + Le groupe applique au quotidien l'organisation décrite dans le wiki
-+ L'ambiance est bonne dans le groupe et chacuna l'occasion de s'exprimer et de s'investir.
++ L'ambiance est bonne dans le groupe et chacun a l'occasion de s'exprimer et de s'investir.
 
 WIKI ET COACHING [A VERIFIER]
 + Le wiki est correctement complété au fur et à mesure
