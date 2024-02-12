@@ -9,8 +9,8 @@
 + Les contraintes sont listées dans le wiki
 
 + Des contacts réguliers ont été pris avec le client.
-+ Les contacts avec le client et les décisions sont décrits dans le wiki.
-+ Le client a testé le site et donné son feedback, qui a été pris en compte
++ Les contacts avec le client et les décisions discutées sont décrits dans le wiki.
++ Le client a testé le site et donné son feedback, qui a été pris en compte.
 ```
 
 # 1. Description du Client
