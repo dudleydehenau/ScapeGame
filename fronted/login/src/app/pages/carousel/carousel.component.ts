@@ -13,6 +13,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, Input} from '@angular/core';
 
 
 export class CarouselComponent {
-  @Input() titreSection: string;
+  @Input()
+  titreSection!: string;
   @Input() images: { src: string, alt: string }[] = [];
 }
