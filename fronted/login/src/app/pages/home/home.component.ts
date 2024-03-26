@@ -13,5 +13,5 @@ import {CarouselComponent} from "../carousel/carousel.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  
 }

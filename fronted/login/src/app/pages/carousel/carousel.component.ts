@@ -1,4 +1,5 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Input} from '@angular/core';
+
 
 @Component({
   selector: 'app-carousel',
@@ -12,5 +13,6 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 
 export class CarouselComponent {
-
+  @Input() titreSection: string;
+  @Input() images: { src: string, alt: string }[] = [];
 }

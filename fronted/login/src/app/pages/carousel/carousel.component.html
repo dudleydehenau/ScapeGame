@@ -1,6 +1,10 @@
+
+
+
+
 <div class="carousel">
-  <h2>Mode Histoire</h2>
-  <swiper-container loop="true" navigation="true" slides-per-view="3" space-between="0">
+  <h2 class="titre">{{ titreSection }}</h2>
+  <swiper-container loop="true" navigation="true" slides-per-view="5" space-between="0">
     <swiper-slide class ="carouselElement">
       <img src = "assets/img/chambre.png" alt = "chambre">
     </swiper-slide>
@@ -23,3 +27,18 @@
 </div>
 
 
+
+
+<!--
+
+<div class="carousel">
+  <h2 class="titre">{{ titreSection }}</h2>
+  <swiper-container loop="true" navigation="true" slides-per-view="5" space-between="0">
+    <swiper-slide class ="carouselElement" *ngFor="let image of images">
+      <img [src]="image.src" [alt]="image.alt">
+    </swiper-slide>
+  </swiper-container>
+</div>
+
+
+-->
