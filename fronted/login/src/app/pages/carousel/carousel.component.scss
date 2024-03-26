@@ -12,6 +12,10 @@ img {
     object-position: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    &:active{
+      border: 3px solid blue;
+    }
 }
 
 .carousel{
@@ -29,6 +33,7 @@ img {
     transform: scale(1.1); /* agrandissment de l'image quand on passe la souri dessu */
     opacity: 0.5; /* image deviens moins visible quand on passe la sourie dessus */
   }
+
 }
 
 .tritreNiveau{
@@ -39,4 +44,6 @@ img {
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.7); /* Pour rendre le texte plus lisible */
 }
+
+
 
