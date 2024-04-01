@@ -11,7 +11,7 @@ import {NgForOf, NgIf} from "@angular/common";
   styleUrl: './chambre.component.scss'
 })
 export class ChambreComponent {
-   titles = [
+titles = [
     { text: 'Tile 1', cols: 2, rows: 4, color: 'lightblue' },
     { text: 'Tile 2', cols: 2, rows: 4, color: 'lightgreen' },
     { text: 'Tile 3', cols: 2, rows: 1.5, color: 'lightpink' },

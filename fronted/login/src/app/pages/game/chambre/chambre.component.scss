@@ -1,0 +1,71 @@
+
+.content{
+  width : 100%;
+  height: 100%;
+}
+
+.textJeu{
+  width: 99.5%;
+  text-align: center;
+  font-size: 20px;
+  border : 2px solid black;
+  background-color : white;
+  align-items: center;
+}
+
+.imgJeu{
+  width: 100%;
+  height: 60%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+button{
+  display: block;
+  width: 100%;
+  height: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.comment{
+  width: 100%;
+  overflow-y:scroll;
+
+}
+.comment p{
+  display: block;
+  width: 90%;
+  height: 10%;
+  font-size: 20px;
+  background-color: #b955d4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.content-comment{
+  width: 99%;
+  height: 99%;
+  border : 2px solid black;
+  overflow : hidden;
+}
+h2{
+  text-align: center;
+}
+.content-comment:hover{
+  overflow-y: visible;
+}
+
+
+
+
+
+

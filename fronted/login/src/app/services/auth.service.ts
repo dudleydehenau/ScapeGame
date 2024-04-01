@@ -34,7 +34,7 @@ export class AuthService {
         tap((tokenOject: any) => {
           this.userId = tokenOject.userId;
           this.isUserLoggedIn$.next(true);
-          
+          localStorage.setItem("token", tokenOject.token);
           this.router.navigate([".."]);
         }),
         catchError(this.errorHandlerService.handleError<{
