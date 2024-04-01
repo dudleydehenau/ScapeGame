@@ -1,20 +1,24 @@
 <mat-grid-list cols="4" rowHeight="2:1.5">
-  <mat-grid-tile [colspan]= 2 [rowspan]= 1.5>
+  <mat-grid-tile [colspan]=2 [rowspan]=1.5>
     <div class="content">
-      <div class = "imgJeu">
-        <img src ="assets/img/chambre.png" alt="chambre">
+      <div class="imgJeu">
+        <img src="assets/img/chambre.png" alt="chambre">
+        <div class="overlay">
+          <button type="button" class="playButton">Jouer</button>
+        </div>
       </div>
-      <div class = "textJeu">
+      <div class="textJeu">
         <p>La chambre est un lieu de repos et de détente. C'est un endroit où l'on peut se reposer et se ressourcer. Il est important de bien aménager sa chambre pour qu'elle soit un lieu agréable et confortable. Voici quelques conseils pour bien aménager sa chambre.</p>
       </div>
-      <button type="button" class=" playButton">Jouer</button>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]= 0.5 [rowspan]= 0.5 [style.background]="'lightpink'">like</mat-grid-tile>
-  <mat-grid-tile [colspan]= 0.5 [rowspan]= 0.5 [style.background]="'#DDBDF1'" >3</mat-grid-tile>
-  <mat-grid-tile [colspan]= 2 [rowspan]= 0.5>
+  <mat-grid-tile [colspan]=0.5 [rowspan]=0.5 [style.background]="'lightpink'">like</mat-grid-tile>
+  <mat-grid-tile [colspan]=0.5 [rowspan]=0.5 [style.background]="'#DDBDF1'">3</mat-grid-tile>
+  <mat-grid-tile [colspan]=2 [rowspan]=0.5>
     <div class="content-comment">
-      <div class = "comment">
+      <div class="comment">
+        <p>Super jeu !</p>
+        <p>Parfait</p>
         <p>Super jeu !</p>
         <p>parfait</p>
         <p>Super jeu !</p>
@@ -25,10 +29,30 @@
         <p>parfait</p>
         <p>Super jeu !</p>
         <p>parfait</p>
-        <p>Super jeu !</p>
-        <p>parfait</p>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]=4 [rowspan]=1>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-users"></i>
+        <p>Chat intégré</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-gift"></i>
+        <p>Score personnel</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-trophy"></i>
+        <p>Classements mondiaux</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-comments"></i>
+        <p>Invite tes amis</p>
       </div>
     </div>
   </mat-grid-tile>
 </mat-grid-list>
+
+  
 
