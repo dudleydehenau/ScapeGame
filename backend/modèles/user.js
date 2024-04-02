@@ -8,12 +8,12 @@ module.exports = class User {
     }
 
     static find(email){
-        return db.execute('SELECT * FROM users WHERE email = ?', [email]);
+        return db.execute('SELECT * FROM user WHERE email = ?', [email]);
     }
 
     static save(user){
         return db.execute(
-            'INSERT INTO users (nom, email, secret) VALUES (?,?,?)', 
+            'INSERT INTO user (nom, email, secret) VALUES (?,?,?)',
             [user.nom, user.email, user.secret]
         );
     };
