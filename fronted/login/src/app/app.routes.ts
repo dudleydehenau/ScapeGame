@@ -8,6 +8,7 @@ import {JardinComponent} from "./pages/game/jardin/jardin.component";
 import {EspaceComponent} from "./pages/game/espace/espace.component";
 import {ChateauComponent} from "./pages/game/chateau/chateau.component";
 import {HopitalComponent} from "./pages/game/hopital/hopital.component";
+import { NiveauComponent } from './pages/game/chateau/niveau/niveau.component';
 
 export const routes: Routes = [
   {
@@ -40,6 +41,9 @@ export const routes: Routes = [
   { path: 'game/hopital',
     component: HopitalComponent
   },
+  { path: 'game/chateau/niveau',
+    component: NiveauComponent
+  }
 ];
 
 

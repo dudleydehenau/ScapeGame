@@ -1,0 +1,38 @@
+
+
+
+<div class="map">
+    <img class="mapChateau" [src]="chateauImage" alt="image du chateau">
+</div>
+<div class="boutonsG">
+    <img class="objet" src="assets/chateau/objets/coffre.png" alt="image du coffre">
+    <img class="objet" src="assets/chateau/objets/os.png" alt="image des os">
+    <img class="objet" src="assets/chateau/objets/tonneau.png" alt="image tonneau" (click)="tonneau()">
+    <img class="objet" src="assets/chateau/objets/skull.png" alt="image du crane" (click)="skull()">
+    <img class="objet" src="assets/chateau/objets/epees.png" alt="image des epees">
+    <img class="objet" src="assets/chateau/objets/piece.png" alt="image des pieces">
+    <img class="objet" src="assets/chateau/objets/potionRouge.png" alt="image de la potion rouge">
+</div>
+ <div class="boutonsD">
+    <img class="objet" src="assets/chateau/objets/potionVert.png" alt="image de la potion verte" (click)="lave()">
+    <img class="objet" src="assets/chateau/objets/feu.png" alt="image du feu">
+    <img class="objet" src="assets/chateau/objets/fleches.png" alt="image des fleches">
+    <img class="objet" src="assets/chateau/objets/drapeau.png" alt="image du drapeau">
+    <img class="objet" src="assets/chateau/objets/fenetre.png" alt="image de la fenetre" (click)="fenetre()">
+    <img class="objet" src="assets/chateau/objets/porte.png" alt="image de la porte fermé" (click)="porte()">
+</div>
+    
+    
+<div class="imageIndice" *ngIf="imageVisibleCode">
+    <img class="indice" [src]="cheminImageCode" alt="code de la porte">
+</div>
+
+<div class="imageIndice" *ngIf="imageVisibleCle">
+    <img class="cle" [src]="cheminImageCle" alt="clé">
+</div>
+    
+    
+<div class="imageIndice" *ngIf="codePorteZoneTextVisible">
+    <app-code-porte></app-code-porte>
+</div>
+
