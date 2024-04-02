@@ -21,3 +21,13 @@ CREATE TABLE [ScoreBoard] (
     FOREIGN KEY (levelId) REFERENCES [Level](levelId) ON DELETE SET NULL,
     FOREIGN KEY (userId) REFERENCES [User](userId) ON DELETE CASCADE
 );
+CREATE TABLE [Commentary] (
+    userId INT,
+    levelId INT,
+    commentaryId INT,
+    commentaryText VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (userId, levelId, commentaryId),
+    FOREIGN KEY (userId) REFERENCES [User](userId) ON DELETE CASCADE,
+    FOREIGN KEY (levelId) REFERENCES [Level](levelId) ON DELETE CASCADE
+);
