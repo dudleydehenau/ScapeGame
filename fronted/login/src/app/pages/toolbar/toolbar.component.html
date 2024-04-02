@@ -9,9 +9,14 @@
       <mat-icon>home</mat-icon>
     </button>
   </a>
-  <a routerLinkActive="active-link" routerLink="/login">
+  <a *ngIf="!isAuthentificated" routerLinkActive="active-link" routerLink="/login">
     <button mat-icon-button class="login-button" aria-label="login-icon">
     <mat-icon>login</mat-icon>
+      </button>
+  </a>
+  <a *ngIf="isAuthentificated" (click)="logout()" routerLinkActive="active-link" routerLink="/login">
+    <button mat-icon-button class="login-button" aria-label="login-icon">
+    <mat-icon>logout</mat-icon>
       </button>
   </a>
 </mat-toolbar>

@@ -8,6 +8,8 @@ import {JardinComponent} from "./pages/game/jardin/jardin.component";
 import {EspaceComponent} from "./pages/game/espace/espace.component";
 import {ChateauComponent} from "./pages/game/chateau/chateau.component";
 import {HopitalComponent} from "./pages/game/hopital/hopital.component";
+import {ChambrePlayComponent} from "./pages/game/chambre/chambre-play/chambre-play.component";
+import {AuthGuardService} from "./services/auth-guard.service";
 
 export const routes: Routes = [
   {
@@ -20,26 +22,36 @@ export const routes: Routes = [
   },
   {
     path: 'signup',
-    component: SignupComponent
+    component: SignupComponent,
   },
   { path: 'game/chambre',
-    component: ChambreComponent
+    component: ChambreComponent,
+    canActivate: [AuthGuardService]
   },
   { path: 'game/prison',
-    component: PrisonComponent
+    component: PrisonComponent,
+    canActivate: [AuthGuardService]
   },
   { path: 'game/jardin',
-    component: JardinComponent
+    component: JardinComponent,
+    canActivate: [AuthGuardService]
   },
   { path: 'game/espace',
-    component: EspaceComponent
+    component: EspaceComponent,
+    canActivate: [AuthGuardService]
   },
   { path: 'game/chateau',
-    component: ChateauComponent
+    component: ChateauComponent,
+    canActivate: [AuthGuardService]
   },
   { path: 'game/hopital',
-    component: HopitalComponent
+    component: HopitalComponent,
+    canActivate: [AuthGuardService]
   },
+  { path: 'game/chambre/chambrePlay',
+    component: ChambrePlayComponent,
+    canActivate: [AuthGuardService]
+  }
 ];
 
 
