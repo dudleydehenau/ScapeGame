@@ -27,11 +27,20 @@ export class CommentaireService {
         catchError(this.errorHandlerService.handleError<Commentaire[]>("fetchAll", []))
       );
   }
-  createComment(formData:Partial<Commentaire>, userId: Pick<User, "id">):Observable<Commentaire>{
+  createComment(formData:Partial<Commentaire>, userId: User["id"]):Observable<Commentaire>{
     return this.http
       .post<Commentaire>(this.url, {commentaire: formData.commentaire, userId: userId}, this.httpOptions)
       .pipe(
         catchError(this.errorHandlerService.handleError<Commentaire>("createComment"))
+      );
+  }
+
+  deleteCommentaire(commentaireId: Commentaire["id"]):Observable<{}>{
+    const url = `${this.url}/${commentaireId}`;
+    return this.http
+      .delete<Commentaire>(url, this.httpOptions)
+      .pipe(
+        catchError(this.errorHandlerService.handleError<Commentaire>("deleteCommentaire"))
       );
   }
 

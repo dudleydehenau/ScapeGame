@@ -19,6 +19,9 @@
   <mat-grid-tile [colspan]= 2 [rowspan]= 0.5>
     <div class="content-comment">
       <mat-card *ngFor="let comment of commentaire$ | async">
+        <button *ngIf="comment.userId === userId" mat-icon-button class="delete-button"  (click)="delete(comment.id)">
+          <mat-icon color="warn">delete</mat-icon>
+        </button>
         <div class="date">
           {{comment.date}}
         </div>

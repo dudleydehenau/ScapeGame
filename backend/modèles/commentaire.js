@@ -15,4 +15,12 @@ module.exports = class Post {
       'INSERT INTO commentaire (commentaire, userId) VALUES (?, ?)',
       [commentaire.commentaire, commentaire.userId]
     );
-  }}
+
+
+  }
+   static delete(id){
+    return db.execute('DELETE FROM commentaire WHERE id = ?', [id]);
+  }
+}
+
+
