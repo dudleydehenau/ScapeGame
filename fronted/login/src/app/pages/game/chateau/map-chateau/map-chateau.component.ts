@@ -4,6 +4,7 @@ import { PersonnageComponent } from '../personnage/personnage.component';
 import { FormsModule } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-map-chateau',
   standalone: true,
@@ -19,7 +20,72 @@ import { FormsModule } from '@angular/forms';
 
 export class MapChateauComponent {
 
-  chateauImage = 'assets/chateau/mapchateauNormal.png';
+  //lave
+  laveOn: boolean = false;
+  cheminImageLave: string = 'assets/chateau/map/mapChateauLave.png';
+
+  lave(): void {
+    this.laveOn = true;
+  }
+
+
+  //Porte Sortie Code
+  porteOn: boolean = false;
+  cheminImagePorteOverte: string = 'assets/chateau/map/mapChateauPorteOuverte.png';
+
+  codePorteText: string = '';
+  codePorteZoneTextVisible: boolean = false;
+
+  envoyerCodePorte() {
+    this.codePorteZoneTextVisible = !this.codePorteZoneTextVisible;
+    if(this.codePorteText === 'lapin rose'){
+      console.log('Le code :', this.codePorteText);
+      this.porteOn = true;
+    }else{
+      console.log('Mauvais code');
+    }
+  }
+
+
+  //Piece secrète
+  pieceSecreteOn: boolean = false;
+  cheminImagePieceSecrete: string = 'assets/chateau/map/mapChateauPieceSecrete.png';
+
+  pieceSecrete(): void {
+    this.pieceSecreteOn = true;
+  }
+
+
+  //objet sur la table coté droit
+  craneTableDroiteOn: boolean = true;
+  cheminImageTableDroite: string = 'assets/chateau/map/objets/craneTableDroitD.png';
+
+  tableDroite(): void {
+    this.craneTableDroiteOn = !this.craneTableDroiteOn;
+  }
+
+
+  
+  craneClick(event: MouseEvent)  {
+    if(this.cheminImageTableDroite == "assets/chateau/map/objets/craneTableDroitG.png"){
+      this.cheminImageTableDroite = 'assets/chateau/map/objets/craneTableDroitD.png';
+    }else{
+      this.cheminImageTableDroite = "assets/chateau/map/objets/craneTableDroitG.png"
+    }
+  }
+
+
+
+ 
+
+
+
+
+
+
+  /*
+
+
   imageVisibleCode1: boolean = false;
   imageVisibleCode2: boolean = false;
   imageVisibleSkull: boolean = false;
@@ -31,7 +97,6 @@ export class MapChateauComponent {
   cheminImageSkull: string = 'assets/chateau/indices/indiceSkull.png';
 
   codePorteZoneTextVisible: boolean = false;
-  laveImage: boolean = false;
   porteOuverteImage: boolean = false;
 
   tonneau(): void {
@@ -51,36 +116,15 @@ export class MapChateauComponent {
   }
 
   porte(): void {
-    if(this.laveImage == false){
-      this.chateauImage = 'assets/chateau/mapchateauNormalOuvert.png';
-    }else{
-      this.chateauImage = 'assets/chateau/mapchateauPorteOuverte.png';
-    }
-    this.porteOuverteImage = true;
+    
  
   }
 
-  lave(): void {
-    if(this.porteOuverteImage == false){
-      this.chateauImage = 'assets/chateau/mapchateau.png';
-    }else{
-      this.chateauImage = 'assets/chateau/mapchateauPorteOuverte.png';
-    }
-    this.laveImage = true;
-  }
 
 
-  codePorteText: string = '';
+  
 
-  envoyerCodePorte() {
-    this.codePorteZoneTextVisible = !this.codePorteZoneTextVisible;
-    if(this.codePorteText === 'lapin rose'){
-      console.log('Le code :', this.codePorteText);
-      this.porte();
-    }else{
-      console.log('Mauvais code');
-    }
-  }
+  */
 
 }
 
