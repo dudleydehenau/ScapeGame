@@ -27,11 +27,11 @@ export class LoginComponent implements OnInit{
   createFormGroup() {
     return new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
-      secret: new FormControl('', [Validators.required, Validators.minLength(7)])
+      userPassword: new FormControl('', [Validators.required, Validators.minLength(7)])
     });
   }
   login() {
-    this.authService.login(this.loginForm.value.email, this.loginForm.value.secret).subscribe();
+    this.authService.login(this.loginForm.value.email, this.loginForm.value.userPassword).subscribe();
 
   }
 

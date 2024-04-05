@@ -8,18 +8,19 @@ const auth = require('../middleware/auth');
 
 const router = express.Router();
 
-router.get('/',auth, commentaireController.fetchAll);
+router.get('/:levelId',auth, commentaireController.fetchAll);
 
 router.post(
   '/',
   [
     auth,
-    body('commentaire').trim().isLength({ min: 10 }).not().isEmpty(),
     body('userId').trim().not().isEmpty(),
+    body('levelId').trim().not().isEmpty(),
+    body('commentaryText').trim().isLength({ min: 10 }).not().isEmpty(),
   ],
   commentaireController.postCommentaire
 );
 
-router.delete('/:id',auth , commentaireController.deleteCommentaire);
+router.delete('/:id' ,auth, commentaireController.deleteCommentaire);
 
 module.exports = router;

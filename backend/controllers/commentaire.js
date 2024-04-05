@@ -2,9 +2,12 @@ const { validationResult } = require('express-validator');
 
 const Commentaire = require('../modèles/commentaire');
 
-exports.fetchAll = async (req, res, next) => {
+exports.fetchAll = async (req, res, next) => {;
     try{
-        const [allCommentaires] = await Commentaire.fetchAll();
+
+        const levelId = req.params.levelId
+
+        const [allCommentaires] = await Commentaire.fetchAll(levelId);
         res.status(200).json(allCommentaires);
     }catch(err){
         if (!err.statusCode) {
@@ -19,14 +22,16 @@ exports.postCommentaire = async (req, res, next) => {
 
     if(!errors.isEmpty()) return
 
-    const commentaire = req.body.commentaire;
+    const levelId = req.body.levelId;
     const userId = req.body.userId;
+    const commentaryText = req.body.commentaryText;
 
     try{
 
         const commentaireDetails = {
-            commentaire: commentaire,
+            levelId: levelId,
             userId: userId,
+            commentaryText: commentaryText
         };
 
         const result = await Commentaire.save(commentaireDetails);

@@ -7,11 +7,13 @@ import  {Observable} from "rxjs";
 import {catchError} from "rxjs/operators";
 
 
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CommentaireService {
   private url = "http://localhost:3000/commentaire";
+  levelId! : number;
 
   httpOptions: {headers: HttpHeaders } = {
     headers: new HttpHeaders({
@@ -20,22 +22,24 @@ export class CommentaireService {
    };
 
   constructor(private http:HttpClient, private errorHandlerService : ErrorHandlerService) {}
-    fetchAll(): Observable<Commentaire[]>{
+
+    fetchAll(levelId : number): Observable<Commentaire[]>{
+      const url = `${this.url}/${levelId}`;
       return this.http
-      .get<Commentaire[]>(this.url, {responseType : "json"})
+      .get<Commentaire[]>(url, {responseType : "json"})
       .pipe(
         catchError(this.errorHandlerService.handleError<Commentaire[]>("fetchAll", []))
       );
   }
-  createComment(formData:Partial<Commentaire>, userId: User["id"]):Observable<Commentaire>{
+  createComment(formData:Partial<Commentaire>, userId: User["userId"],levelId : number):Observable<Commentaire>{
     return this.http
-      .post<Commentaire>(this.url, {commentaire: formData.commentaire, userId: userId}, this.httpOptions)
+      .post<Commentaire>(this.url, {commentaryText: formData.commentaryText, userId: userId,levelId:levelId}, this.httpOptions)
       .pipe(
         catchError(this.errorHandlerService.handleError<Commentaire>("createComment"))
       );
   }
 
-  deleteCommentaire(commentaireId: Commentaire["id"]):Observable<{}>{
+  deleteCommentaire(commentaireId: Commentaire["userId"]):Observable<{}>{
     const url = `${this.url}/${commentaireId}`;
     return this.http
       .delete<Commentaire>(url, this.httpOptions)
