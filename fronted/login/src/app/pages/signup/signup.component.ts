@@ -31,9 +31,12 @@ export class SignupComponent implements OnInit{
 
   createFormGroup() {
     return new FormGroup({
-      nom: new FormControl('', [Validators.required, Validators.minLength(2)]),
-      email: new FormControl('', [Validators.required, Validators.email]),
-      secret: new FormControl('', [Validators.required, Validators.minLength(7)])
+      userFName: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      userLName: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      userBirth : new FormControl('', [Validators.required]),
+      userPassword: new FormControl('', [Validators.required, Validators.minLength(7)]),
+      email: new FormControl('', [Validators.required, Validators.email])
+
     });
   }
   signup() {

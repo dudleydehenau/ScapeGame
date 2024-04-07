@@ -10,7 +10,9 @@ const authController = require('../controllers/auth');
 
 router.post(
     '/signup',
-    [body('nom').trim().not().isEmpty(),
+    [body('userFName').trim().not().isEmpty(),
+    body('userLName').trim().not().isEmpty(),
+    body('userBirth').trim().not().isEmpty(),
     body('email').isEmail().withMessage('Email invalide').custom(async(email) =>{
         const user = await User.find(email);
         if(user[0].length > 0){
@@ -18,7 +20,7 @@ router.post(
         }
     })
     .normalizeEmail(),
-    body('secret').trim().isLength({min: 7})
+    body('userPassword').trim().isLength({min: 7})
     ],
     authController.signup
 );

@@ -11,17 +11,22 @@ exports.signup = async (req, res, next) => {
 
     if(!errors.isEmpty()) return
 
-    const nom = req.body.nom;
+    const userFName = req.body.userFName;
+    const userLName = req.body.userLName;
+    const userBirth = req.body.userBirth;
+    const userPassword = req.body.userPassword;
     const email = req.body.email;
-    const secret = req.body.secret;
+
 
     try{
-        const hashedSecret = await bcrypt.hash(secret,12);
+        const hashedUserPassword = await bcrypt.hash(userPassword,12);
         
         const userDetails = {
-            nom: nom,
-            email: email,
-            secret: hashedSecret
+            userFName: userFName,
+            userLName: userLName,
+            userBirth: userBirth,
+            userPassword: hashedUserPassword,
+            email: email
         }
 
         const result = await User.save(userDetails);
@@ -37,7 +42,7 @@ exports.signup = async (req, res, next) => {
 
 exports.login = async (req, res, next) => {
     const email = req.body.email;
-    const secret = req.body.secret;
+    const userPassword = req.body.userPassword;
 
     try{
         const user = await User.find(email);
@@ -50,7 +55,7 @@ exports.login = async (req, res, next) => {
 
         const storedUser = user[0][0];
 
-        const isEqual = await bcrypt.compare(secret, storedUser.secret);
+        const isEqual = await bcrypt.compare(userPassword, storedUser.userPassword);
 
         if(!isEqual){
             const error = new Error('mot de passe incorrect');
@@ -60,13 +65,13 @@ exports.login = async (req, res, next) => {
 
         const token = jwt.sign({
             email: storedUser.email,
-            userId: storedUser.id
+            userId: storedUser.userId
             },
             'secretfortoken',
             {expiresIn: '1h'}
         );
 
-        res.status(200).json({token: token, userId: storedUser.id});
+        res.status(200).json({token: token, userId: storedUser.userId});
 
 
     }catch(err){

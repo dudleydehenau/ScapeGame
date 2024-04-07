@@ -1,20 +1,22 @@
 const db = require('../utiles/databases');
 
 module.exports = class User {
-    constructor(nom, email, secret){
-        this.nom = nom;
+    constructor(userFName, userLName, userBirth,userPassword, email) {
+        this.userFName = userFName;
+        this.userLName = userLName;
+        this.userBirth = userBirth;
+        this.userPassword = userPassword;
         this.email = email;
-        this.secret = secret;
     }
 
     static find(email){
-        return db.execute('SELECT * FROM users WHERE email = ?', [email]);
+        return db.execute('SELECT * FROM user WHERE email = ?', [email]);
     }
 
     static save(user){
         return db.execute(
-            'INSERT INTO users (nom, email, secret) VALUES (?,?,?)', 
-            [user.nom, user.email, user.secret]
+            'INSERT INTO user (userFName,userLName,userBirth,userPassword,email ) VALUES (?,?,?,?,?)',
+            [user.userFName, user.userLName, user.userBirth, user.userPassword, user.email]
         );
     };
 };
