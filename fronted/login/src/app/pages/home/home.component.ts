@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import {ToolbarComponent} from "../toolbar/toolbar.component";
 import {CarouselComponent} from "../carousel/carousel.component";
 import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { SidenavComponent } from '../sidenav/sidenav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 
 @Component({
@@ -10,7 +12,9 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
   imports: [
     ToolbarComponent,
     CarouselComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SidenavComponent,
+    MatSidenavModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
