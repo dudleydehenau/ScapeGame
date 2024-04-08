@@ -1,4 +1,4 @@
-CREATE SCHEMA `scapegame`
+CREATE SCHEMA `scapegame`;
 
 CREATE TABLE `scapegame`.`user` (
   `userId` int NOT NULL AUTO_INCREMENT,
@@ -27,7 +27,7 @@ CREATE TABLE `scapegame`.`scoreboard` (
   CONSTRAINT `userScoreFK` FOREIGN KEY (`userId`) REFERENCES `scapegame`.`user` (`userId`)
 );
 
-CREATE TABLE `commentary` (
+CREATE TABLE `scapegame`.`commentary` (
   `userId` int NOT NULL,
   `levelId` int NOT NULL,
   `commentaryId` int NOT NULL AUTO_INCREMENT,
