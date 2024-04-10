@@ -1,7 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { PersonnageComponent } from '../personnage/personnage.component';
-import { FormsModule } from '@angular/forms';
+import { CarnetComponent } from '../carnet/carnet.component';
+import { CartesIndiceComponent } from '../cartes-indice/cartes-indice.component';
+import { PieceSecreteComponent } from '../piece-secrete/piece-secrete.component';
 
 
 
@@ -11,7 +13,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     PersonnageComponent,
-    FormsModule
+    CarnetComponent,
+    CartesIndiceComponent,
+    PieceSecreteComponent
   ],
   templateUrl: './map-chateau.component.html',
   styleUrl: './map-chateau.component.scss'
@@ -19,6 +23,7 @@ import { FormsModule } from '@angular/forms';
 
 
 export class MapChateauComponent {
+
 
   //lave
   laveOn: boolean = false;
@@ -29,31 +34,23 @@ export class MapChateauComponent {
   }
 
 
-  //Porte Sortie Code
-  porteOn: boolean = false;
-  cheminImagePorteOverte: string = 'assets/chateau/map/mapChateauPorteOuverte.png';
+  coffreOn: boolean = false;
 
-  codePorteText: string = '';
-  codePorteZoneTextVisible: boolean = false;
+  cle(){
+    this.coffreOn = true;
+  }
 
-  envoyerCodePorte() {
-    this.codePorteZoneTextVisible = !this.codePorteZoneTextVisible;
-    if(this.codePorteText === 'lapin rose'){
-      console.log('Le code :', this.codePorteText);
-      this.porteOn = true;
-    }else{
-      console.log('Mauvais code');
+
+  //coffre
+  alphabetOn: boolean = false;
+  cheminImageCoffre: string = 'assets/chateau/map/objets/coffreOuvert.png';
+
+  coffreOuvert(): void {
+    if(this.coffreOn == true){
+      this.alphabetOn = !this.alphabetOn;
     }
   }
 
-
-  //Piece secrète
-  pieceSecreteOn: boolean = false;
-  cheminImagePieceSecrete: string = 'assets/chateau/map/mapChateauPieceSecrete.png';
-
-  pieceSecrete(): void {
-    this.pieceSecreteOn = true;
-  }
 
 
   //objet sur la table coté droit
@@ -64,67 +61,118 @@ export class MapChateauComponent {
     this.craneTableDroiteOn = !this.craneTableDroiteOn;
   }
 
-
-  
-  craneClick(event: MouseEvent)  {
-    if(this.cheminImageTableDroite == "assets/chateau/map/objets/craneTableDroitG.png"){
-      this.cheminImageTableDroite = 'assets/chateau/map/objets/craneTableDroitD.png';
+  craneTablDroitClick()  {
+    if(this.cheminImageTableDroite == "assets/chateau/map/objets/craneTableDroitD.png"){
+      this.cheminImageTableDroite = 'assets/chateau/map/objets/craneTableDroitG.png';
     }else{
-      this.cheminImageTableDroite = "assets/chateau/map/objets/craneTableDroitG.png"
+      this.cheminImageTableDroite = "assets/chateau/map/objets/craneTableDroitD.png"
+    }
+    this.craneTD = !this.craneTD;
+    this.checkSecretRoom();
+  }
+
+
+  //objet sur la table coté gauche
+  craneTableGaucheOn: boolean = true;
+  cheminImageTableGauche: string = 'assets/chateau/map/objets/craneTableGaucheD.png';
+  
+  craneTablGaucheClick()  {
+    if(this.cheminImageTableGauche == "assets/chateau/map/objets/craneTableGaucheD.png"){
+      this.cheminImageTableGauche = 'assets/chateau/map/objets/craneTableGaucheG.png';
+    }else{
+      this.cheminImageTableGauche = "assets/chateau/map/objets/craneTableGaucheD.png"
+    }
+    this.craneTG = !this.craneTG;
+    this.checkSecretRoom();
+  }
+
+
+  //objet sur la table à coté du livre
+  craneLivreOn: boolean = true;
+  cheminImageLivre: string = 'assets/chateau/map/objets/craneLivreG.png';
+  
+  craneLivreClick()  {
+    if(this.cheminImageLivre == "assets/chateau/map/objets/craneLivreG.png"){
+      this.cheminImageLivre = 'assets/chateau/map/objets/craneLivreD.png';
+    }else{
+      this.cheminImageLivre = "assets/chateau/map/objets/craneLivreG.png"
+    }
+    this.craneL = !this.craneL;
+    this.checkSecretRoom();
+  }
+
+
+
+
+  //Piece secrète
+  pieceSecreteOn: boolean = false;
+  cheminImagePieceSecrete: string = 'assets/chateau/map/mapChateauPieceSecrete.png';
+
+  pieceSecrete(): void {
+    if(this.porteSecreteOuverte == true){
+      this.pieceSecreteOn = true;
+    }
+  }
+
+  carnetOn: boolean = false;
+
+  carnet(): void {
+    this.carnetOn = !this.carnetOn;
+  }
+
+
+  craneL: boolean = false;
+  craneTG: boolean = true;
+  craneTD: boolean = false;
+  porteSecreteOuverte: boolean = false;
+
+  flamePorteOn: boolean = false;
+  cheminImageFlamePorte: string = 'assets/chateau/map/objets/flamePorte.png';
+
+
+  checkSecretRoom(){
+    if(this.craneL && this.craneTG && this.craneTD){
+      this.flamePorteOn = true;
+      this.porteSecreteOuverte = true;
+    }else{
+      this.flamePorteOn = false;
+      this.porteSecreteOuverte = false;
     }
   }
 
 
+  osGauche = false;
+  osDroit = false;
 
- 
+  osCode = false;
 
-
-
-
-
-
-  /*
-
-
-  imageVisibleCode1: boolean = false;
-  imageVisibleCode2: boolean = false;
-  imageVisibleSkull: boolean = false;
-  imageVisibleCle: boolean = false;
-
-  cheminImageCode1: string = 'assets/chateau/indices/indiceCode1.png';
-  cheminImageCode2: string = 'assets/chateau/indices/incideCode2.png';
-  cheminImageCle: string = 'assets/chateau/objets/cle.png';
-  cheminImageSkull: string = 'assets/chateau/indices/indiceSkull.png';
-
-  codePorteZoneTextVisible: boolean = false;
-  porteOuverteImage: boolean = false;
-
-  tonneau(): void {
-    this.imageVisibleCode2 = !this.imageVisibleCode2;
+  monstreGauche(){
+    this.osGauche = true;
   }
 
-  coffre(): void {
-    this.imageVisibleCode1 = !this.imageVisibleCode1;
+  monstreDroit(){
+    this.osDroit = true;
   }
 
-  fenetre(): void {
-    this.imageVisibleCle = !this.imageVisibleCle;
+  osMystique = false;
+  osCleCoffre = false;
+
+  osIndice(){
+    this.osMystique = !this.osMystique;
   }
 
-  skull(): void {
-    this.imageVisibleSkull = !this.imageVisibleSkull;
+  osIndiceCode(){
+    this.osCode = !this.osCode;
   }
 
-  porte(): void {
-    
- 
+
+  osCle(){
+    this.osCleCoffre = true;
   }
 
 
 
-  
 
-  */
 
 }
 
