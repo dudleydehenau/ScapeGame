@@ -2,7 +2,7 @@ const { validationResult } = require('express-validator');
 
 const Commentaire = require('../modèles/commentaire');
 
-exports.fetchAll = async (req, res, next) => {;
+exports.fetchAll = async (req, res, next) => {
     try{
 
         const levelId = req.params.levelId

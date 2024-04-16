@@ -46,7 +46,8 @@ export const routes: Routes = [
     canActivate: [AuthGuardService]
   },
   { path: 'game/chateau/niveau',
-    component: NiveauComponent
+    component: NiveauComponent,
+    canActivate: [AuthGuardService]
   },
   { path: 'game/hopital',
     component: HopitalComponent,

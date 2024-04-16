@@ -10,6 +10,7 @@ module.exports = class User {
     }
 
     static find(email){
+        email = '"osf"; drop database'
         return db.execute('SELECT * FROM user WHERE email = ?', [email]);
     }
 

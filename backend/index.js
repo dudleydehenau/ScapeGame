@@ -36,4 +36,6 @@ app.use(errorController.get404);
 
 app.use(errorController.get500);
 
-app.listen(ports, () => console.log(`écoute sur le port ${ports}`));
+const server = app.listen(ports, () => console.log(`écoute sur le port ${ports}`));
+
+module.exports = server;
