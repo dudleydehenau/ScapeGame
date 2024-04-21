@@ -9,7 +9,7 @@ import {EspaceComponent} from "./pages/game/espace/espace.component";
 import {ChateauComponent} from "./pages/game/chateau/chateau.component";
 import {HopitalComponent} from "./pages/game/hopital/hopital.component";
 import { NiveauComponent } from './pages/game/chateau/niveau/niveau.component';
-import {ChambrePlayComponent} from "./pages/game/chambre/chambre-play/chambre-play.component";
+import { ChambrePlayComponent } from './pages/game/chambre/chambrePlay/chambre-play.component';
 import {AuthGuardService} from "./services/auth-guard.service";
 
 export const routes: Routes = [

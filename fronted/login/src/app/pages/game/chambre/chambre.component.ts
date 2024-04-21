@@ -13,13 +13,13 @@ import {MatCard} from "@angular/material/card";
 import {NgForOf,CommonModule} from "@angular/common";
 import {MatIcon} from "@angular/material/icon";
 import {first} from "rxjs/operators";
-
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
   selector: 'app-chambre',
   standalone: true,
-  imports: [MatGridListModule, MatFormField, FormsModule, MatInputModule, MatButton, ReactiveFormsModule, MatCard, NgForOf, CommonModule, MatIcon, MatIconButton],
+  imports: [MatGridListModule, MatFormField, FormsModule, MatInputModule, MatButton, ReactiveFormsModule, MatCard, NgForOf, CommonModule, MatIcon, MatIconButton, RouterLink, RouterLinkActive],
   templateUrl: './chambre.component.html',
   styleUrl: './chambre.component.scss'
 })
