@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CartesIndiceComponent } from '../cartes-indice/cartes-indice.component';
+import { ScoreFinComponent } from '../score-fin/score-fin.component';
 
 @Component({
   selector: 'app-piece-secrete',
@@ -9,12 +10,16 @@ import { CartesIndiceComponent } from '../cartes-indice/cartes-indice.component'
   imports: [
     CommonModule,
     FormsModule,
-    CartesIndiceComponent
+    CartesIndiceComponent,
+    ScoreFinComponent
   ],
   templateUrl: './piece-secrete.component.html',
   styleUrl: './piece-secrete.component.scss'
 })
 export class PieceSecreteComponent {
+
+  @Input()
+  totalSecondesDebut!: number;
 
   codePorteSortieEscapeGame = "portail dimensionnel mystique";
   codePorteFlameCraneReponse = "FFCFCFCCF"
@@ -81,15 +86,42 @@ export class PieceSecreteComponent {
   craneCode = "C";
 
 
+  tempsFin = new Date();
+  heure = 0;
+  minutes = 0;
+  secondes = 0;
+  totalSecondesFin = 0;
+  totalScore = 0;
+
+
   validerCodePorte(){
     if(this.codePorteFlameCrane == this.codePorteFlameCraneReponse && this.flameCouloirOn == true){
+      this.tempsFin = new Date();
+      this.heure = this.tempsFin.getHours();
+      this.minutes = this.tempsFin.getMinutes();
+      this.secondes = this.tempsFin.getSeconds();
+      this.totalSecondesFin = (this.heure * 3600) + (this.minutes * 60) + this.secondes;
+      this.totalScore = this.totalSecondesFin - this.totalSecondesDebut;
+      console.log(this.heure + " : " + this.minutes + " : " + this.secondes);
+      console.log(this.totalSecondesFin);
+      console.log(this.totalSecondesDebut);
+      console.log(this.totalScore);
+      
       this.porteOn = true;
+
     }else{
       this.flameCouloirOn = false;
       this.cheminImageCrane = "assets/chateau/map/objets/cranePieceSecreteG.png";
       this.flamePorteOn = false;
       this.codePorteFlameCrane = "";
     }
+  }
+
+  scoreJoueurEcranOn = false;
+
+
+  sortirChateau(){
+    this.scoreJoueurEcranOn = true;
   }
 
 

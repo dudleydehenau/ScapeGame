@@ -172,6 +172,24 @@ export class MapChateauComponent {
 
 
 
+  tempsDepart: Date;
+  heure: number;
+  minutes: number;
+  secondes: number;
+  totalSecondesDebut: number = 0;
+
+  constructor() {
+    this.tempsDepart = new Date();
+    this.heure = this.tempsDepart.getHours();
+    this.minutes = this.tempsDepart.getMinutes();
+    this.secondes = this.tempsDepart.getSeconds();
+    this.totalSecondesDebut = (this.heure * 3600) + (this.minutes * 60) + this.secondes;
+    console.log(this.heure + " : " + this.minutes + " : " + this.secondes);
+    console.log(this.totalSecondesDebut)
+  }
+
+
+
 
 
 }
