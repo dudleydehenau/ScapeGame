@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ScoreService } from '../../../../services/score-chambre.service';
+import { Injectable } from '@angular/core';
+import { AuthService } from '../../../../services/auth.service';
 
 @Component({
   selector: 'app-chambre-play',
@@ -11,7 +13,11 @@ import { ScoreService } from '../../../../services/score-chambre.service';
   styleUrl: './chambre-play.component.scss'
 })
 
-export class ChambrePlayComponent {
+@Injectable({
+  providedIn: 'root'
+})
+
+export class ChambrePlayComponent implements OnInit {
   codeInput: string = ''; 
   currentTime: string = '';
   timer: number = 0;
@@ -21,7 +27,7 @@ export class ChambrePlayComponent {
   showCodeInterface: boolean = false;
   codeColors: string[] = [];
 
-  constructor(private scoreService: ScoreService) { }
+  constructor(private scoreService: ScoreService, private authService: AuthService) { }
 
   ngOnInit() {
     this.startTimer();
@@ -128,7 +134,7 @@ export class ChambrePlayComponent {
       const action = "Code incorrect. Rien ne se passe...";
       this.journalEntries.push(action);
       this.timer += 30;
-      
+     
     }
     this.codeInput = '';
     this.codeCorrect = false;
@@ -155,7 +161,7 @@ export class ChambrePlayComponent {
 
   addScoreToDatabase() {
     const levelId = 1;
-    const userId = 3;
+    const userId = this.authService.userId;
     const scoreBTime = this.score;
 
     console.log('Valeurs envoyées au service :', { levelId, userId, scoreBTime });
