@@ -54,27 +54,24 @@ export class ChambrePlayComponent {
   journalEntries: string[] = [];
 
   inspecterCouteau(): void {
-    const action = "Vous ramassez le couteau ! Vous laissez vos empreintes";
+    const action = "Vous ramassez le couteau ! Vous laissez vos empreintes ";
     this.journalEntries.push(action);
     this.timer += 15;
   }
 
   inspecterHorloge(): void {
-    const action = "4";
+    const action = "3";
     this.journalEntries.push(action);
   }
 
   inspecterTele() {
-    const actionRed = "🔴"; 
-    const actionGreen = "🟢"; 
-    const actionBlue = "🔵"; 
-    const actionYellow = "🟡"; 
+    const action = "🔴\n🟢\n🔵\n🟡"; 
 
-    this.journalEntries.push(actionRed, actionGreen, actionBlue, actionYellow);
+    this.journalEntries.push(action);
   }
 
   moveFenetre() {
-    const action = "3";
+    const action = "9";
     this.journalEntries.push(action);
   }
   openCoffre() {
@@ -84,7 +81,7 @@ export class ChambrePlayComponent {
   }
 
   openCadre() {
-    const action = "1"; 
+    const action = "5"; 
     this.journalEntries.push(action); 
   }
 
@@ -116,7 +113,7 @@ export class ChambrePlayComponent {
   submitCode() {
     console.log("Code soumis :", this.codeInput);
     
-    if (this.codeInput === '2419') {
+    if (this.codeInput === '9532') {
       this.codeCorrect = true;
       clearInterval(this.timerInterval); 
 
@@ -158,7 +155,7 @@ export class ChambrePlayComponent {
 
   addScoreToDatabase() {
     const levelId = 1;
-    const userId = 1;
+    const userId = 3;
     const scoreBTime = this.score;
 
     console.log('Valeurs envoyées au service :', { levelId, userId, scoreBTime });
