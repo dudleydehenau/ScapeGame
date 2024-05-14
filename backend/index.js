@@ -12,6 +12,8 @@ const errorController = require('./controllers/error');
 
 const scoreRoutes = require('./routes/score');
 
+const levelRoutes = require('./routes/level');
+
 const app = express();
 
 const ports = process.env.PORT || 3000;
@@ -35,6 +37,8 @@ app.use('/auth', authRoutes);
 app.use('/commentaire', commentairesRoutes);
 
 app.use('/score', scoreRoutes);
+
+app.use('/level', levelRoutes);
 
 app.use(errorController.get404);
 

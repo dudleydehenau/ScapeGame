@@ -9,4 +9,6 @@ const pool = mysql.createPool({
     password: config.password,
 });
 
+pool.on('connection', () => console.log('Connected to scapegame Database'));
+
 module.exports = pool.promise();
