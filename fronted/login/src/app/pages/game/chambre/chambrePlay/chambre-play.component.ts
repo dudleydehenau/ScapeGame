@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ScoreService } from '../../../../services/score-chambre.service';
+import { Injectable } from '@angular/core';
+import { AuthService } from '../../../../services/auth.service';
 
 @Component({
   selector: 'app-chambre-play',
@@ -11,7 +13,11 @@ import { ScoreService } from '../../../../services/score-chambre.service';
   styleUrl: './chambre-play.component.scss'
 })
 
-export class ChambrePlayComponent {
+@Injectable({
+  providedIn: 'root'
+})
+
+export class ChambrePlayComponent implements OnInit {
   codeInput: string = ''; 
   currentTime: string = '';
   timer: number = 0;
@@ -21,7 +27,7 @@ export class ChambrePlayComponent {
   showCodeInterface: boolean = false;
   codeColors: string[] = [];
 
-  constructor(private scoreService: ScoreService) { }
+  constructor(private scoreService: ScoreService, private authService: AuthService) { }
 
   ngOnInit() {
     this.startTimer();
@@ -54,23 +60,20 @@ export class ChambrePlayComponent {
   journalEntries: string[] = [];
 
   inspecterCouteau(): void {
-    const action = "Vous ramassez le couteau ! Vous laissez vos empreintes";
+    const action = "Vous ramassez le couteau ! Vous laissez vos empreintes ";
     this.journalEntries.push(action);
     this.timer += 15;
   }
 
   inspecterHorloge(): void {
-    const action = "4";
+    const action = "3";
     this.journalEntries.push(action);
   }
 
   inspecterTele() {
-    const actionRed = "🔴"; 
-    const actionGreen = "🟢"; 
-    const actionBlue = "🔵"; 
-    const actionYellow = "🟡"; 
+    const action = "🔴\n🟢\n🔵\n🟡"; 
 
-    this.journalEntries.push(actionRed, actionGreen, actionBlue, actionYellow);
+    this.journalEntries.push(action);
   }
 
   moveFenetre() {
@@ -84,7 +87,7 @@ export class ChambrePlayComponent {
   }
 
   openCadre() {
-    const action = "1"; 
+    const action = "5"; 
     this.journalEntries.push(action); 
   }
 
@@ -116,7 +119,7 @@ export class ChambrePlayComponent {
   submitCode() {
     console.log("Code soumis :", this.codeInput);
     
-    if (this.codeInput === '2419') {
+    if (this.codeInput === '9532') {
       this.codeCorrect = true;
       clearInterval(this.timerInterval); 
 
@@ -131,7 +134,7 @@ export class ChambrePlayComponent {
       const action = "Code incorrect. Rien ne se passe...";
       this.journalEntries.push(action);
       this.timer += 30;
-      
+     
     }
     this.codeInput = '';
     this.codeCorrect = false;
@@ -158,7 +161,7 @@ export class ChambrePlayComponent {
 
   addScoreToDatabase() {
     const levelId = 1;
-    const userId = 1;
+    const userId = this.authService.userId;
     const scoreBTime = this.score;
 
     console.log('Valeurs envoyées au service :', { levelId, userId, scoreBTime });
