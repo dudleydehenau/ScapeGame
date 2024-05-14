@@ -1,18 +1,39 @@
-CREATE SCHEMA IF NOT EXISTS `login`;
+CREATE SCHEMA `scapegame`;
 
-CREATE TABLE `login`.`user` (
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `nom` VARCHAR(255) NOT NULL,
-    `email` VARCHAR(255) NOT NULL,
-    `secret` VARCHAR(255) NOT NULL,
-    CONSTRAINT USERPK PRIMARY KEY(`id`)
+CREATE TABLE `scapegame`.`user` (
+  `userId` int NOT NULL AUTO_INCREMENT,
+  `userFName` varchar(50) NOT NULL,
+  `userLName` varchar(50) NOT NULL,
+  `userBirth` date NOT NULL,
+  `userPassword` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  PRIMARY KEY (`userId`)
 );
 
-CREATE TABLE `login`.`commentaire` (
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `userId` INT NOT NULL,
-    `commentaire` VARCHAR(255) NOT NULL,
-    `date` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT COMPK PRIMARY KEY(`id`),
-    CONSTRAINT COMFK FOREIGN KEY (`userId`) REFERENCES `login`.`user`(`id`)
+CREATE TABLE `scapegame`.`level` (
+  `levelId` int NOT NULL AUTO_INCREMENT,
+  `levelName` varchar(100) NOT NULL,
+  `userId` int NOT NULL,
+  PRIMARY KEY (`levelId`),
+  CONSTRAINT `userLevelFK` FOREIGN KEY (`userId`) REFERENCES `scapegame`.`user` (`userId`)
+);
+
+CREATE TABLE `scapegame`.`scoreboard` (
+  `levelId` int NOT NULL,
+  `userId` int NOT NULL,
+  `scoreBTime` int DEFAULT NULL,
+  PRIMARY KEY (`userId`,`levelId`),
+  CONSTRAINT `levelScoreFK` FOREIGN KEY (`levelId`) REFERENCES `scapegame`.`level` (`levelId`),
+  CONSTRAINT `userScoreFK` FOREIGN KEY (`userId`) REFERENCES `scapegame`.`user` (`userId`)
+);
+
+CREATE TABLE `scapegame`.`commentary` (
+  `userId` int NOT NULL,
+  `levelId` int NOT NULL,
+  `commentaryId` int NOT NULL AUTO_INCREMENT,
+  `commentaryText` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`commentaryId`),
+  CONSTRAINT `comLevelFK` FOREIGN KEY (`levelId`) REFERENCES `scapegame`.`level` (`levelId`),
+  CONSTRAINT `comUserFK` FOREIGN KEY (`userId`) REFERENCES `scapegame`.`user` (`userId`)
 );
