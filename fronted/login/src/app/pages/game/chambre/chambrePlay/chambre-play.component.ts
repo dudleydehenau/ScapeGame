@@ -74,7 +74,7 @@ export class ChambrePlayComponent {
   }
 
   moveFenetre() {
-    const action = "3";
+    const action = "9";
     this.journalEntries.push(action);
   }
   openCoffre() {
