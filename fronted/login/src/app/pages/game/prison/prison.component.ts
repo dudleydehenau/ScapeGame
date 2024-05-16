@@ -13,6 +13,7 @@ import {MatCard} from "@angular/material/card";
 import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatIcon} from "@angular/material/icon";
 import {MatInput} from "@angular/material/input";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-prison',
@@ -31,7 +32,9 @@ import {MatInput} from "@angular/material/input";
     MatInput,
     MatLabel,
     NgIf,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterLink,
+    RouterLinkActive
   ],
   templateUrl: './prison.component.html',
   styleUrl: './prison.component.scss'

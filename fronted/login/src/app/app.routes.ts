@@ -10,6 +10,7 @@ import {ChateauComponent} from "./pages/game/chateau/chateau.component";
 import {HopitalComponent} from "./pages/game/hopital/hopital.component";
 import { NiveauComponent } from './pages/game/chateau/niveau/niveau.component';
 import { ChambrePlayComponent } from './pages/game/chambre/chambrePlay/chambre-play.component';
+import {RpgGameComponent} from "./pages/game/prison/rpg-game/rpg-game.component";
 import {AuthGuardService} from "./services/auth-guard.service";
 
 export const routes: Routes = [
@@ -55,6 +56,10 @@ export const routes: Routes = [
   },
   { path: 'game/chambre/chambrePlay',
     component: ChambrePlayComponent,
+    canActivate: [AuthGuardService]
+  },
+  { path: 'game/prison/niveau',
+    component: RpgGameComponent,
     canActivate: [AuthGuardService]
   }
 ];
