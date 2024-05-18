@@ -78,6 +78,10 @@ export class EspaceComponent implements OnInit{
       this.commentaireService.deleteCommentaire(commentaireId)
         .subscribe(() => (this.commentaire$ = this.fetchAll()));
     }
+
+    jeuxIndisponib() {
+      alert("Le jeu n'est pas encore disponible.");
+    }
 }
 
 
