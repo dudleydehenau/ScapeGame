@@ -12,6 +12,8 @@ import { NiveauComponent } from './pages/game/chateau/niveau/niveau.component';
 import { ChambrePlayComponent } from './pages/game/chambre/chambrePlay/chambre-play.component';
 import {RpgGameComponent} from "./pages/game/prison/rpg-game/rpg-game.component";
 import {AuthGuardService} from "./services/auth-guard.service";
+import { ScoreTestComponent } from './pages/test/score-test/score-test.component';
+
 
 export const routes: Routes = [
   {
@@ -61,6 +63,9 @@ export const routes: Routes = [
   { path: 'game/prison/niveau',
     component: RpgGameComponent,
     canActivate: [AuthGuardService]
+  },
+  { path: 'test/scores',
+    component: ScoreTestComponent
   }
 ];
 
