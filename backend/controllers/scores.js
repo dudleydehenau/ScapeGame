@@ -14,11 +14,11 @@ exports.postScore = async (req, res, next) => {
 
     if (rows.length > 0) {
       const bestScore = rows[0].scoreBTime;
-      if (scoreBTime > bestScore) {
+      if (scoreBTime < bestScore) { // Changement ici : vérifie si le score est inférieur
         await Scores.updateScore(levelId, userId, scoreBTime); // Mettre à jour le score
         return res.status(200).json({ message: 'Score mis à jour avec succès', bestScore: scoreBTime });
       } else {
-        return res.status(200).json({ message: 'Le nouveau score n\'est pas supérieur au score existant', bestScore: bestScore });
+        return res.status(200).json({ message: 'Le nouveau score n\'est pas inférieur au score existant', bestScore: bestScore });
       }
     } else {
       await Scores.save({ levelId, userId, scoreBTime });
@@ -53,11 +53,11 @@ exports.updateBestScore = async (req, res, next) => {
 
     if (rows.length > 0) {
       const bestScore = rows[0].scoreBTime;
-      if (score > bestScore) {
+      if (score < bestScore) { // Changement ici : vérifie si le score est inférieur
         await Scores.updateScore(levelId, userId, score); // Mettre à jour le score
         return res.status(200).json({ message: 'Score mis à jour avec succès', bestScore: score });
       } else {
-        return res.status(200).json({ message: 'Le nouveau score n\'est pas supérieur au score existant', bestScore: bestScore });
+        return res.status(200).json({ message: 'Le nouveau score n\'est pas inférieur au score existant', bestScore: bestScore });
       }
     } else {
       await Scores.save({ levelId, userId, scoreBTime: score });

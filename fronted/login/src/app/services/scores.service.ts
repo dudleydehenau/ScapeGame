@@ -23,11 +23,11 @@ export class ScoresService {
     return this.http.put(`${this.apiUrl}/update`, { levelId, userId, score });
   }
 
-  // Soumet le score et met à jour si le nouveau score est meilleur que le précédent
+  // Soumet le score et met à jour s'il est plus petit que le précédent meilleur score
   submitScore(levelId: number, userId: string, score: number): Observable<any> {
     return this.getBestScore(levelId, userId).pipe(
       switchMap(bestScore => {
-        if (score > bestScore) {
+        if (score < bestScore) {
           return this.updateBestScore(levelId, userId, score);
         } else {
           return new Observable(observer => {
