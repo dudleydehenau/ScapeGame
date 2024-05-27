@@ -42,16 +42,14 @@ export class ChambreComponent implements OnInit{
         commentaryText: new FormControl('', [Validators.required, Validators.minLength(10)]),
       });
     }
-    onSubmit(formData:Pick<Commentaire,"commentaryText">) {
+    onSubmit(formData: Pick<Commentaire, "commentaryText">) {
       this.commentaireService
         .createComment(formData, this.authService.userId, this.levelId)
-        .pipe(first())
         .subscribe(() => {
-          this.createComment()
+          this.createComment();
+          this.form.reset();
+          this.formDirective.resetForm();
         });
-      this.createComment()
-      this.form.reset();
-      this.formDirective.resetForm();
     }
     fetchAll(): Observable<Commentaire[]>{
       return this.commentaireService.fetchAll(this.levelId);

@@ -43,6 +43,7 @@ export class ChambrePlayComponent implements OnInit {
 
   ngOnDestroy() {
     clearInterval(this.timerInterval); 
+    this.timerInterval = null;
   }
 
   formatTimer(time: number) {
@@ -137,7 +138,7 @@ export class ChambrePlayComponent implements OnInit {
      
     }
     this.codeInput = '';
-    this.codeCorrect = false;
+    //this.codeCorrect = false;
   }
 
   calculateScore() {
