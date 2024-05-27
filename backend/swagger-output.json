@@ -23,38 +23,30 @@
               "type": "object",
               "properties": {
                 "userFName": {
-                  "example": "Maxime"
+                  "example": "any"
                 },
                 "userLName": {
-                  "example": "Delcorte"
+                  "example": "any"
                 },
                 "userBirth": {
-                  "example": "1997-12-12"
+                  "example": "any"
                 },
                 "userPassword": {
-                  "example": "password"
+                  "example": "any"
                 },
                 "email": {
-                  "example": "max@gmail.com"
+                  "example": "any"
                 }
               }
             }
           }
         ],
         "responses": {
-          "201": {
-            "description": "utilisateur enregisté",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "example": "utilisateur enregisté"
-                }
-              }
-            }
+          "200": {
+            "description": "OK"
           },
-          "500": {
-            "description": "erreur serveur"
+          "201": {
+            "description": "Created"
           }
         }
       }
@@ -70,10 +62,10 @@
               "type": "object",
               "properties": {
                 "email": {
-                  "example": "max@gmail.com"
+                  "example": "any"
                 },
                 "userPassword": {
-                  "example": "password"
+                  "example": "any"
                 }
               }
             }
@@ -81,31 +73,14 @@
         ],
         "responses": {
           "200": {
-            "description": "utilisateur connecté",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "token": {
-                  "example": "any"
-                }
-              }
-            }
-          },
-          "404": {
-              "description": "utilisateur non trouvé"
-          },
-          "401": {
-              "description": "mot de passe incorrect"
-          },
-          "500": {
-              "description": "erreur serveur"
+            "description": "OK"
           }
         }
       }
     },
     "/commentaire/{levelId}": {
       "get": {
-        "description": "commentaires d'un niveau",
+        "description": "",
         "parameters": [
           {
             "name": "levelId",
@@ -116,34 +91,11 @@
         ],
         "responses": {
           "200": {
-            "description": "commentaires d'un niveau",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "properties": {
-                  "commentaryText": {
-                    "example": "j'aime les pommes"
-                  },
-                  "userId": {
-                    "example": "1"
-                  },
-                  "levelId": {
-                    "example": "1"
-                  }
-                    }
-                  }
-                }
-              },
-              "401": {
-                  "description": "Not authenticated!"
-              },
-              "500": {
-                  "description": "Erreur serveur"
-              }
+            "description": "OK"
           }
         }
-      },
+      }
+    },
     "/commentaire/": {
       "post": {
         "description": "",
@@ -155,35 +107,24 @@
               "type": "object",
               "properties": {
                 "levelId": {
-                  "example": "1"
+                  "example": "any"
                 },
                 "userId": {
-                  "example": "1"
+                  "example": "any"
                 },
                 "commentaryText": {
-                  "example": "j'aime les gens"
+                  "example": "any"
                 }
               }
             }
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "201": {
-            "description": "posté avec succès",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "message": {
-                  "example": "posté avec succès"
-                }
-              }
-            }
-          },
-          "500": {
-              "description": "erreur serveur"
-          },
-          "401": {
-              "description": "Not authenticated!"
+            "description": "Created"
           }
         }
       }
@@ -201,21 +142,172 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/score/scores": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
             "schema": {
               "type": "object",
               "properties": {
-                "message": {
-                  "example": "commentaire supprimé"
+                "levelId": {
+                  "example": "any"
+                },
+                "userId": {
+                  "example": "any"
+                },
+                "scoreBTime": {
+                  "example": "any"
                 }
               }
             }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/scores/": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "levelId": {
+                  "example": "any"
+                },
+                "userId": {
+                  "example": "any"
+                },
+                "scoreBTime": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/scores/best/{userId}/{levelId}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "levelId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           },
           "500": {
-              "description": "erreur serveur"
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/scores/update": {
+      "put": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "levelId": {
+                  "example": "any"
+                },
+                "userId": {
+                  "example": "any"
+                },
+                "score": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           },
-          "401": {
-              "description": "Not authenticated!"
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/level/search": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "term",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          }
+        }
+      }
+    },
+    "/level/data": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
           }
         }
       }
