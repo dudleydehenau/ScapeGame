@@ -1,6 +1,31 @@
-.texteScore{
-    padding: 60px;
+
+
+.texteScore {
     color: white;
     text-align: center;
-    font-size: 30px;
-}
+    font-size: 2em;
+    margin: 20px 0;
+    padding: 60px;
+  }
+  
+  .classementCadre {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    width: 400px;
+  }
+  
+  .classement {
+    line-height: 2; 
+    white-space: pre-wrap;
+    font-size: 1em;
+  }
+  
+  pre {
+    margin: 0; 
+    padding: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }

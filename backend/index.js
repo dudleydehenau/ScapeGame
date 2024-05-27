@@ -10,6 +10,7 @@ const errorController = require('./controllers/error');
 const scoreRoutes = require('./routes/score');
 const scoresRoutes = require('./routes/scores');
 const levelRoutes = require('./routes/level');
+const classementRoutes = require('./routes/classement');
 
 const app = express();
 const ports = process.env.PORT || 3000;
@@ -86,6 +87,21 @@ app.use('/scores', scoresRoutes);
  *         description: Successful response
  */
 app.use('/level', levelRoutes);
+
+/**
+ * @swagger
+ * /classement/{levelId}:
+ *   get:
+ *     summary: Get classement for a specific level
+ *     parameters:
+ *         description: The ID of the level
+ *     responses:
+ *       200:
+ *         description: Successful response
+ */
+app.use('/classement', classementRoutes);
+
+
 
 app.use(errorController.get404);
 app.use(errorController.get500);
