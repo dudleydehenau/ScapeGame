@@ -3,15 +3,15 @@
     <div style="padding: 1rem">
       <h1 class="title">Filtre : </h1>
       <h2>Difficulté :</h2>
-      <mat-checkbox>Facile</mat-checkbox>
-      <mat-checkbox>Moyen</mat-checkbox>
-      <mat-checkbox>Difficile</mat-checkbox>
-      <mat-checkbox>Extrême</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="facile">Facile</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="moyen">Moyen</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="difficile">Difficile</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="extreme">Extrême</mat-checkbox>
       <h2>Thèmes :</h2>
-      <mat-checkbox>Jeux-vidéos</mat-checkbox>
-      <mat-checkbox>Casse-têtes</mat-checkbox>
-      <mat-checkbox>Culture</mat-checkbox>
-      <mat-checkbox>Dev</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="jeuxVideos">Jeux-vidéos</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="casseTetes">Casse-têtes</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="culture">Culture</mat-checkbox>
+      <mat-checkbox checked="true" (change)="filterGames()" [(ngModel)]="dev">Dev</mat-checkbox>
     </div>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="carousel">
-          <app-carousel [titreSection]="'Communauté :'"></app-carousel>
+          <app-grid [titreSection]="'Tous les jeux :'"></app-grid>
         </div>
 
         <div class="carousel">

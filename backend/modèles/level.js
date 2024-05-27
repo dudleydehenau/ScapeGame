@@ -11,11 +11,8 @@ module.exports = class Level {
         this.views = views;
     }
 
-    static fetchById(levelId) {
-        return db.execute(
-            'SELECT * FROM level WHERE levelId = ?',
-            [levelId]
-        );
+    static fetchAll() {
+        return db.execute('SELECT * FROM level');
     }
 
     static searchByName(name) {

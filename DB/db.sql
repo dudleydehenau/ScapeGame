@@ -1,3 +1,5 @@
+CREATE SCHEMA `scapegame`;
+
 CREATE TABLE `scapegame`.`user` (
   `userId` int NOT NULL AUTO_INCREMENT,
   `userFName` varchar(50) NOT NULL,
@@ -42,9 +44,9 @@ CREATE TABLE `scapegame`.`commentary` (
 );
 
 INSERT INTO `scapegame`.`level` (`levelId`,`levelName`, `userId`, `difficulty`, `theme`, `likes`, `publication_date`, `views`)
-VALUES (1,'chambre', 1, 5, 'casse-tete', 10, '2024-03-13', 100),
-       (2,'prison', 1, 3, 'jeux-video', 5, '2024-05-13', 50),
-       (3,'chateau', 1, 4, 'jeux-video', 7, '2024-03-27', 70),
+VALUES (1,'chambre', 1, 5, 'casse-tete', 10, '2024-03-13', 170),
+       (2,'prison', 1, 3, 'jeux-video', 5, '2024-05-13', 157),
+       (3,'chateau', 1, 4, 'jeux-video', 7, '2024-03-27', 200),
        (4,'espace', 1, 2, 'culture', 3, '2024-01-13', 30),
        (5,'hopital', 1, 1, 'dev', 1, CURDATE(), 10),
        (6,'jardin', 1, 5, 'dev', 15, CURDATE(), 150);

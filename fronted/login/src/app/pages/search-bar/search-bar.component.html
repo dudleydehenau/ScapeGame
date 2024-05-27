@@ -1,7 +1,12 @@
-<div>
+<div class="search-container">
     <div class="search-bar">
-        <button class="loupe">🔍</button>
-        <input type="text" [(ngModel)]="searchTerm" (keydown.enter)="search()" placeholder="Rechercher..." class="recherche">
+        <button class="loupe" (click)="search()">🔍</button>
+        <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="updateSuggestions()" (keydown.enter)="search()" placeholder="Rechercher..." class="recherche">
+        <div *ngIf="suggestions.length > 0" class="suggestions">
+            <div *ngFor="let suggestion of suggestions" (click)="selectSuggestion(suggestion)">
+                {{ suggestion }}
+            </div>
+        </div>
     </div>
     <app-tri-button></app-tri-button>
 </div>

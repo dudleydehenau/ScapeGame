@@ -16,8 +16,24 @@ interface Level { levelId: number; levelName: string; }
 export class SearchBarComponent {
   searchTerm = '';
   searchResults: Level[] = [];
+  suggestions: string[] = [];
+  levels: string[] = ['chambre', 'prison', 'chateau', 'espace', 'hopital', 'jardin'];
 
   constructor(private levelService: LevelService, private router: Router) {}
+
+  updateSuggestions() {
+    if (this.searchTerm.length > 0) {
+        this.suggestions = this.levels.filter(level => level.startsWith(this.searchTerm));
+    }
+    else {
+        this.suggestions = [];
+    }
+  }
+
+  selectSuggestion(suggestion: string) {
+    this.searchTerm = suggestion;
+    this.suggestions = [];
+  }
 
   search() {
     console.log('Search term:', this.searchTerm);

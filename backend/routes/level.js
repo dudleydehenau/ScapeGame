@@ -20,14 +20,8 @@ router.get(
     levelController.searchLevels
 );
 
-router.get(
-    '/:levelId', 
-  [
-        query('levelId')
-        .isInt()
-        .withMessage('le niveau doit être un nombre entier')
-  ], 
-  levelController.getLevelData
-);
+router.get('/data',
+    levelController.getLevelData
+);  
 
 module.exports = router;

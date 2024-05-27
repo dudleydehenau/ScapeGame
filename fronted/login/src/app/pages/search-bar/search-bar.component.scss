@@ -2,7 +2,9 @@
     background-color: pink;
     border-radius: 20px;
     padding: 10px;
-    display: inline-flex;    align-items: center;
+    display: inline-flex;
+    align-items: center;
+    width: 300px;
   }
 
   .loupe {
@@ -23,4 +25,32 @@
   font-size: 16px;
   outline: none;
   margin-left: 10px;
+  flex-grow: 1;
+}
+
+.search-container {
+    position: relative;
+}
+
+.suggestions {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.suggestions {
+  position: absolute;
+  width: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  margin-top: 2px;
+  top: 70%;
+  left: 70px;
 }
