@@ -24,11 +24,12 @@
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.2",
     "node": "^21.7.1",
-    "swagger-autogen": "^2.23.7"
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^3.1.0",
+    "nodemon": "^3.1.1",
     "supertest": "^6.3.4"
   }
 }
