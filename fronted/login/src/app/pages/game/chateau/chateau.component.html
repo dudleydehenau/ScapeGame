@@ -12,7 +12,11 @@
       </a>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile [colspan]= 0.5 [rowspan]= 0.5 [style.background]="'lightpink'">like</mat-grid-tile>
+  <mat-grid-tile [colspan]="0.5" [rowspan]="0.5">
+    <button mat-icon-button [style.background]="'lightpink'" (click)="likeBouton()">
+      <mat-icon>thumb_up</mat-icon>
+    </button>
+  </mat-grid-tile>
   <mat-grid-tile [colspan]= 0.5 [rowspan]= 0.5>
     <div class="content"  >
       <form class="commentForm" [formGroup]="form" #formDirective="ngForm" (ngSubmit)="onSubmit(form.value)">

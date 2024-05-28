@@ -14,6 +14,7 @@ import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatIcon} from "@angular/material/icon";
 import {MatInput} from "@angular/material/input";
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import { ListKeyManager } from '@angular/cdk/a11y';
 
 
 @Component({
@@ -53,6 +54,10 @@ export class ChateauComponent implements OnInit{
       this.form = this.createFormGroup();
       this.commentaire$ = this.fetchAll();
       this.userId = this.authService.userId;
+    }
+
+    likeBouton(){
+      alert("Ce bouton ne fonctionne pas pour le moment.");
     }
 
    createFormGroup() {

@@ -24,7 +24,6 @@ export class ScoreFinComponent implements OnInit {
 
   ngOnInit() {
     this.submitScore();
-    this.getClassement();
   }
 
   submitScore() {
@@ -32,6 +31,7 @@ export class ScoreFinComponent implements OnInit {
       response => {
         console.log('Score soumis avec succès :', response);
         this.getBestScore();
+        this.getClassement();
       },
       error => {
         console.error('Erreur lors de la soumission du score :', error);
@@ -67,7 +67,7 @@ export class ScoreFinComponent implements OnInit {
 
     return classement.map(score => {
       if (score.userId == this.userId) {
-        return `<div style="font-weight: bold; color: yellow;">Votre meilleur score est de ${score.scoreBTime} secondes</div>`;
+        return `<div style="font-weight: bold; colo">*** Votre meilleur score est de ${score.scoreBTime} secondes ***</div>`;
       } else {
         return `<div>Utilisateur: ${score.userId}, Score: ${score.scoreBTime} secondes</div>`;
       }
