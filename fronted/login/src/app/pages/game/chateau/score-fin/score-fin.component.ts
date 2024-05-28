@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AuthService } from '../../../../services/auth.service';
+import { ClassementService } from '../../../../services/classement.service';
 import { ScoresService } from '../../../../services/scores.service';
 
 @Component({
@@ -17,8 +18,9 @@ export class ScoreFinComponent implements OnInit {
   levelId = 3;
   userId = this.authService.userId.toString();
   bestScore!: number;
+  classement: string = '';
 
-  constructor(private scoresService: ScoresService, private authService: AuthService) {}
+  constructor(private scoresService: ScoresService, private authService: AuthService, private classementService: ClassementService) {}
 
   ngOnInit() {
     this.submitScore();
@@ -29,6 +31,7 @@ export class ScoreFinComponent implements OnInit {
       response => {
         console.log('Score soumis avec succès :', response);
         this.getBestScore();
+        this.getClassement();
       },
       error => {
         console.error('Erreur lors de la soumission du score :', error);
@@ -46,6 +49,29 @@ export class ScoreFinComponent implements OnInit {
         console.error('Erreur lors de la récupération du meilleur score :', error);
       }
     );
+  }
+
+  getClassement() {
+    this.classementService.getClassement(this.levelId).subscribe(
+      classement => {
+        this.classement = this.formatClassement(classement);
+        console.log('Classement récupéré :', this.classement );
+      },
+      error => {
+        console.error('Erreur lors de la récupération du classement :', error);
+      }
+    );
+  }
+
+  formatClassement(classement: any[]): string {
+
+    return classement.map(score => {
+      if (score.userId == this.userId) {
+        return `<div style="font-weight: bold; colo">*** Votre meilleur score est de ${score.scoreBTime} secondes ***</div>`;
+      } else {
+        return `<div>Utilisateur: ${score.userId}, Score: ${score.scoreBTime} secondes</div>`;
+      }
+    }).join('');
   }
 
 }

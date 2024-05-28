@@ -51,6 +51,11 @@ export class ChambreComponent implements OnInit{
           this.formDirective.resetForm();
         });
     }
+
+    likeBouton(){
+      alert("Ce bouton ne fonctionne pas pour le moment.");
+    }
+    
     fetchAll(): Observable<Commentaire[]>{
       return this.commentaireService.fetchAll(this.levelId);
     }

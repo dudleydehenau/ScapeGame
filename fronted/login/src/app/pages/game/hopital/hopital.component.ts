@@ -82,5 +82,9 @@ export class HopitalComponent implements OnInit{
     jeuxIndisponib() {
       alert("Le jeu n'est pas encore disponible.");
     }
+
+    likeBouton(){
+      alert("Ce bouton ne fonctionne pas pour le moment.");
+    }
 }
 

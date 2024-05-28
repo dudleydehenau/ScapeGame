@@ -81,5 +81,9 @@ export class PrisonComponent implements OnInit{
       this.commentaireService.deleteCommentaire(commentaireId)
         .subscribe(() => (this.commentaire$ = this.fetchAll()));
     }
+
+    likeBouton(){
+      alert("Ce bouton ne fonctionne pas pour le moment.");
+    }
 }
 
