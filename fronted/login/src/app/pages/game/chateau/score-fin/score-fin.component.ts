@@ -67,7 +67,7 @@ export class ScoreFinComponent implements OnInit {
 
     return classement.map(score => {
       if (score.userId == this.userId) {
-        return `<div style="font-weight: bold; colo">*** Votre meilleur score est de ${score.scoreBTime} secondes ***</div>`;
+        return `<div>*** Votre meilleur score est de ${score.scoreBTime} secondes ***</div>`;
       } else {
         return `<div>Utilisateur: ${score.userId}, Score: ${score.scoreBTime} secondes</div>`;
       }
