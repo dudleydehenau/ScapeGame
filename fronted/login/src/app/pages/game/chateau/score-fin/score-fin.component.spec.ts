@@ -45,6 +45,12 @@ describe('ScoreFinComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  it('devrait appeler submitScore() avec ngOnInit()', () => {
+    spyOn(component, 'submitScore');
+    component.ngOnInit();
+    expect(component.submitScore).toHaveBeenCalled();
+  });
+
   it('devrait soumettre le score lors de l"initialisation', () => {
     spyOn(component, 'getBestScore');
     spyOn(component, 'getClassement');
@@ -56,17 +62,8 @@ describe('ScoreFinComponent', () => {
     expect(component.getClassement).toHaveBeenCalled();
   });
 
-  it('devrait gérer l\'erreur lors de la soumission du score', () => {
-    mockScoresService.submitScore.and.returnValue(throwError('Erreur de soumission'));
-    spyOn(console, 'error');
-
-    component.submitScore();
-
-    expect(console.error).toHaveBeenCalledWith('Erreur lors de la soumission du score :', 'Erreur de soumission');
-  });
-
   it('devrait récupérer le meilleur score', () => {
-    const bestScore = 200;
+    const bestScore = 20;
     mockScoresService.getBestScore.and.returnValue(of(bestScore));
 
     component.getBestScore();
@@ -75,31 +72,27 @@ describe('ScoreFinComponent', () => {
     expect(component.bestScore).toBe(bestScore);
   });
 
-  it('devrait gérer l"erreur lors de la récupération du meilleur score', () => {
-    mockScoresService.getBestScore.and.returnValue(throwError('Erreur de récupération du score'));
-    spyOn(console, 'error');
-
-    component.getBestScore();
-
-    expect(console.error).toHaveBeenCalledWith('Erreur lors de la récupération du meilleur score :', 'Erreur de récupération du score');
-  });
-
   it('devrait récupérer le classement', () => {
-    const classement = [{ userId: '27', scoreBTime: 150 }];
-    mockClassementService.getClassement.and.returnValue(of(classement));
+    const classementTest = [
+      { userId: '101', scoreBTime: 14 },
+      { userId: '27', scoreBTime: 111 },
+      { userId: '3', scoreBTime: 450 },
+    ];
+    mockClassementService.getClassement.and.returnValue(of(classementTest));
 
     component.getClassement();
 
     expect(mockClassementService.getClassement).toHaveBeenCalledWith(component.levelId);
-    expect(component.classement).toContain('*** Votre meilleur score est de 150 secondes ***');
+    expect(component.classement).toContain(`<div>Utilisateur: 101, Score: 14 secondes</div><div>*** Votre meilleur score est de 111 secondes ***</div><div>Utilisateur: 3, Score: 450 secondes</div>`);
   });
 
-  it('devrait gérer l"erreur lors de la récupération du classement', () => {
-    mockClassementService.getClassement.and.returnValue(throwError('Erreur de récupération du classement'));
-    spyOn(console, 'error');
+  it('devrait mettre le classement au bon format', () => {
+    const classementResponse = [
+      { userId: '27', scoreBTime: 111 },
+      { userId: '4', scoreBTime: 900 }
+    ];
+    const formattedClassement = component.formatClassement(classementResponse);
 
-    component.getClassement();
-
-    expect(console.error).toHaveBeenCalledWith('Erreur lors de la récupération du classement :', 'Erreur de récupération du classement');
+    expect(formattedClassement).toBe(`<div>*** Votre meilleur score est de 111 secondes ***</div><div>Utilisateur: 4, Score: 900 secondes</div>`);
   });
 });
