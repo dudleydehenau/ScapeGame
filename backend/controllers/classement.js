@@ -1,7 +1,6 @@
 const { validationResult } = require('express-validator');
 const Scores = require('../modèles/classement');
 
-// Autres méthodes...
 
 exports.getClassement = async (req, res, next) => {
   const errors = validationResult(req);

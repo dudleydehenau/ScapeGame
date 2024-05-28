@@ -4,7 +4,6 @@ const scoresController = require('../controllers/classement');
 
 const router = express.Router();
 
-// Route pour récupérer le classement
 router.get('/:levelId',
   [
     param('levelId').isInt()
