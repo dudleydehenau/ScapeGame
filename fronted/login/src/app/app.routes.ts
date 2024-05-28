@@ -63,9 +63,6 @@ export const routes: Routes = [
   { path: 'game/prison/niveau',
     component: RpgGameComponent,
     canActivate: [AuthGuardService]
-  },
-  { path: 'test/scores',
-    component: ScoreTestComponent
   }
 ];
 
